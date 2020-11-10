@@ -79,6 +79,5 @@
   </style>
 
   <style name="Theme.AustinTours.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
   <style name="Theme.AustinTours.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

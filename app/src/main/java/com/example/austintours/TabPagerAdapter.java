@@ -21,7 +21,7 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
   private final Context CONTEXT;
   private final int[] TAB_TITLES = {tab_1, tab_2, tab_3, tab_4, tab_5};
   private final Fragment[] ATTRACTIONS = new Fragment[]{new MainFragment(), new HistoryFragment(),
-      new FoodFragment(), new MusicFragment(), new EventsFragment()};
+      new FoodFragment(), new MusicFragment(), new ParksFragment()};
 
   public TabPagerAdapter(Context context, FragmentManager fm) {
     super(fm);
