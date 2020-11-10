@@ -3,9 +3,24 @@
   <dimen name="activity_horizontal_margin">16dp</dimen>
   <dimen name="activity_vertical_margin">16dp</dimen>
   <dimen name="appbar_padding">16dp</dimen>
-  <dimen name="fab_margin">16dp</dimen>
   <dimen name="appbar_padding_top">8dp</dimen>
 
   <!-- Tab Layout Text Size -->
   <dimen name="customTabTextSize">10sp</dimen>
+
+  <!-- Default List Views Margin -->
+  <dimen name="defaultListViewMargin">5dp</dimen>
+
+  <!-- Availability Views Margin -->
+  <dimen name="availabilityViewMargin">2dp</dimen>
+
+  <!-- Attraction Address Text -->
+  <dimen name="attractionAddress">14sp</dimen>
+
+  <!-- Attraction Days/Hours Availability Text -->
+  <dimen name="attractionHoursText">12sp</dimen>
+
+  <!-- Attraction Name & Section Title Text -->
+  <dimen name="titleTextSize">20sp</dimen>
+
 </resources>

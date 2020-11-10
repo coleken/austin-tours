@@ -14,6 +14,12 @@
     <!-- Customize your theme here. -->
   </style>
 
+  <!-- Attraction Image -->
+  <style name="imageAttraction">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
   <!-- Custom Tab Theme -->
   <style name="customTabLayout" parent="Widget.Design.TabLayout">
     <item name="android:layout_width">match_parent</item>
@@ -25,6 +31,46 @@
   <!-- Custom Tab Text -->
   <style name="customTabLayoutText" parent="TextAppearance.Design.Tab">
     <item name="android:textSize">@dimen/customTabTextSize</item>
+  </style>
+
+  <!-- Attraction TextView -->
+  <style name="parentTextStyle" parent="Theme.AustinTours">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/colorPrimaryText</item>
+  </style>
+
+  <!-- Attraction Name -->
+  <style name="attractionName" parent="parentTextStyle">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/titleTextSize</item>
+  </style>
+
+  <!-- Attraction Days/Hours Availability -->
+  <style name="attractionAvailability" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionHoursText</item>
+    <item name="android:layout_marginBottom">@dimen/availabilityViewMargin</item>
+    <item name="android:layout_marginTop">@dimen/availabilityViewMargin</item>
+  </style>
+
+  <!-- Attraction Address-->
+  <style name="attractionAddress" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionAddress</item>
+    <item name="android:layout_marginTop">@dimen/defaultListViewMargin</item>
+  </style>
+
+  <!-- Divider -->
+  <style name="listDivider" parent="Theme.AustinTours">
+    <item name="android:layout_height">1dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:background">@color/colorDivider</item>
+  </style>
+
+  <!-- List View -->
+  <style name="listView" parent="Theme.AustinTours">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/colorPrimaryText</item>
   </style>
 
   <style name="Theme.AustinTours.NoActionBar">
