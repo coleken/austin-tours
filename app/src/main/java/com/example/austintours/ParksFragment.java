@@ -46,7 +46,7 @@ public class ParksFragment extends Fragment {
   private void displayAttractionList(FragmentParksBinding binding) {
     String[] searchList = getResources().getStringArray(R.array.parksArray);
     ArrayList<Attraction> attractions = new ArrayList<>();
-    final String splitBy = ",,";
+    final String splitBy = ";";
     for (String str : searchList) {
       String[] attraction = str.split(splitBy);
       String name = attraction[0];
