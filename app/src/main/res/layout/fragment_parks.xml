@@ -14,15 +14,6 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_begin="16dp" />
 
-  <!--  &lt;!&ndash; Library List Label &ndash;&gt;-->
-  <!--  <TextView-->
-  <!--    android:id="@+id/text_events_label"-->
-  <!--    style="@style/attractionSectionLabel"-->
-  <!--    app:layout_constraintBottom_toTopOf="@id/list_attraction_items"-->
-  <!--    app:layout_constraintStart_toEndOf="@id/guideline_start"-->
-  <!--    app:layout_constraintTop_toBottomOf="@+id/guideline_top" />-->
-
-
   <!-- Top Guide -->
   <androidx.constraintlayout.widget.Guideline
     android:id="@+id/guideline_bottom"
