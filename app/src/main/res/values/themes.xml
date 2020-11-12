@@ -53,7 +53,7 @@
     <item name="android:layout_marginTop">@dimen/availabilityViewMargin</item>
   </style>
 
-  <!-- Attraction Address-->
+  <!-- Attraction Address -->
   <style name="attractionAddress" parent="parentTextStyle">
     <item name="android:textSize">@dimen/attractionAddress</item>
     <item name="android:layout_marginTop">@dimen/defaultListViewMargin</item>

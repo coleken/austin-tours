@@ -6,7 +6,7 @@
   android:layout_height="match_parent"
   tools:context=".ParksFragment">
 
-  <!-- Attraction List -->
+  <!-- Top Guide -->
   <androidx.constraintlayout.widget.Guideline
     android:id="@+id/guideline_top"
     android:layout_width="wrap_content"
@@ -14,7 +14,7 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_begin="16dp" />
 
-  <!-- Top Guide -->
+  <!-- Bottom Guide -->
   <androidx.constraintlayout.widget.Guideline
     android:id="@+id/guideline_bottom"
     android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_end="16dp" />
 
-  <!-- Bottom Guide -->
+  <!-- Start Guide -->
   <androidx.constraintlayout.widget.Guideline
     android:id="@+id/guideline_start"
     android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
     android:orientation="vertical"
     app:layout_constraintGuide_begin="16dp" />
 
-  <!-- Start Guide -->
+  <!-- End Guide -->
   <androidx.constraintlayout.widget.Guideline
     android:id="@+id/guideline_end"
     android:layout_width="wrap_content"
@@ -38,7 +38,7 @@
     android:orientation="vertical"
     app:layout_constraintGuide_end="16dp" />
 
-  <!-- End Guide -->
+  <!-- Attraction List -->
   <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/list_attraction_items"
     style="@style/listView"
