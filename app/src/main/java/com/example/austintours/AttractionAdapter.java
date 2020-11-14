@@ -32,9 +32,15 @@ public class AttractionAdapter extends
   public void onBindViewHolder(@NonNull AttractionViewHolder holder, int position) {
     Attraction attraction = ATTRACTIONS.get(position);
     holder.name.setText(attraction.getName());
-    holder.days.setText(attraction.getDays());
-    holder.hours.setText(attraction.getHours());
-    holder.address.setText(attraction.getAddress());
+    holder.hoursSunday.setText(attraction.getHoursSunday());
+    holder.hoursMonday.setText(attraction.getHoursMonday());
+    holder.hoursTuesday.setText(attraction.getHoursTuesday());
+    holder.hoursWednesday.setText(attraction.getHoursWednesday());
+    holder.hoursThursday.setText(attraction.getHoursThursday());
+    holder.hoursFriday.setText(attraction.getHoursFriday());
+    holder.hoursSaturday.setText(attraction.getHoursSaturday());
+    holder.addressLineOne.setText(attraction.getAddressLineOne());
+    holder.addressLineTwo.setText(attraction.getAddressLineTwo());
   }
 
   @Override
@@ -45,16 +51,28 @@ public class AttractionAdapter extends
   public static class AttractionViewHolder extends RecyclerView.ViewHolder {
 
     public TextView name;
-    public TextView days;
-    public TextView hours;
-    public TextView address;
+    public TextView hoursSunday;
+    public TextView hoursMonday;
+    public TextView hoursTuesday;
+    public TextView hoursWednesday;
+    public TextView hoursThursday;
+    public TextView hoursFriday;
+    public TextView hoursSaturday;
+    public TextView addressLineOne;
+    public TextView addressLineTwo;
 
     public AttractionViewHolder(@NonNull View attractionItem) {
       super(attractionItem);
       name = attractionItem.findViewById(R.id.text_attraction_name);
-      days = attractionItem.findViewById(R.id.text_attraction_days);
-      hours = attractionItem.findViewById(R.id.text_attraction_hours);
-      address = attractionItem.findViewById(R.id.text_attraction_address);
+      hoursSunday = attractionItem.findViewById(R.id.text_hours_sunday);
+      hoursMonday = attractionItem.findViewById(R.id.text_hours_monday);
+      hoursTuesday = attractionItem.findViewById(R.id.text_hours_tuesday);
+      hoursWednesday = attractionItem.findViewById(R.id.text_hours_wednesday);
+      hoursThursday = attractionItem.findViewById(R.id.text_hours_thursday);
+      hoursFriday = attractionItem.findViewById(R.id.text_hours_friday);
+      hoursSaturday = attractionItem.findViewById(R.id.text_hours_saturday);
+      addressLineOne = attractionItem.findViewById(R.id.text_address_one);
+      addressLineTwo = attractionItem.findViewById(R.id.text_address_two);
     }
   }
 }

@@ -50,10 +50,17 @@ public class ParksFragment extends Fragment {
     for (String str : searchList) {
       String[] attraction = str.split(splitBy);
       String name = attraction[0];
-      String days = attraction[1];
-      String hours = attraction[2];
-      String address = attraction[3];
-      attractions.add(new Attraction(name, days, hours, address));
+      String hoursSunday = attraction[1];
+      String hoursMonday = attraction[2];
+      String hoursTuesday = attraction[3];
+      String hoursWednesday = attraction[4];
+      String hoursThursday = attraction[5];
+      String hoursFriday = attraction[6];
+      String hoursSaturday = attraction[7];
+      String addressLineOne = attraction[8];
+      String addressLineTwo = attraction[9];
+      attractions.add(new Attraction(name, hoursSunday, hoursMonday, hoursTuesday, hoursWednesday,
+          hoursThursday, hoursFriday, hoursSaturday, addressLineOne, addressLineTwo));
     }
     RecyclerView recyclerView = binding.listAttractionItems;
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

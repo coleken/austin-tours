@@ -8,4 +8,43 @@
   <string name="tab_4">Music</string>
   <string name="tab_5">Parks</string>
 
+  <!-- Default Attraction Text -->
+  <string name="default_attraction_text">Attraction</string>
+
+  <!-- Default Hours Text -->
+  <string name="default_hours_text">Hours</string>
+
+  <!-- Default Address Text -->
+  <string name="default_address_text">Address</string>
+
+  <!-- Default Sunday Text -->
+  <string name="default_sunday_text">Sunday Hours</string>
+
+  <!-- Default Monday Text -->
+  <string name="default_monday_text">Monday Hours</string>
+
+  <!-- Default Tuesday Text -->
+  <string name="default_tuesday_text">Tuesday Hours</string>
+
+  <!-- Default Wednesday Text -->
+  <string name="default_wednesday_text">Wednesday Hours</string>
+
+  <!-- Default Thursday Text -->
+  <string name="default_thursday_text">Thursday Hours</string>
+
+  <!-- Default Friday Text -->
+  <string name="default_friday_text">Friday Hours</string>
+
+  <!-- Default Saturday Text -->
+  <string name="default_saturday_text">Saturday Hours</string>
+
+  <!-- Default Address Line One Text -->
+  <string name="default_line_one">Line One</string>
+
+  <!-- Default Address Line Two Text -->
+  <string name="default_line_two">Line Two</string>
+
+  <!-- Attraction image general content description -->
+  <string name="a_photo_of_the_attraction">A photo of the attraction.</string>
+
 </resources>

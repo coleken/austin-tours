@@ -46,6 +46,14 @@
     <item name="android:textSize">@dimen/titleTextSize</item>
   </style>
 
+  <!-- Attraction Days/Hours Availability Label-->
+  <style name="attractionAvailabilityLabel" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionHoursText</item>
+    <item name="android:layout_marginBottom">@dimen/availabilityViewMargin</item>
+    <item name="android:layout_marginTop">@dimen/availabilityViewMargin</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
   <!-- Attraction Days/Hours Availability -->
   <style name="attractionAvailability" parent="parentTextStyle">
     <item name="android:textSize">@dimen/attractionHoursText</item>
@@ -55,8 +63,9 @@
 
   <!-- Attraction Address -->
   <style name="attractionAddress" parent="parentTextStyle">
-    <item name="android:textSize">@dimen/attractionAddress</item>
+    <item name="android:textSize">@dimen/attractionHoursText</item>
     <item name="android:layout_marginTop">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
   </style>
 
   <!-- Divider -->
@@ -64,6 +73,7 @@
     <item name="android:layout_height">1dp</item>
     <item name="android:layout_width">wrap_content</item>
     <item name="android:background">@color/colorDivider</item>
+    <item name="android:layout_marginBottom">@dimen/defaultListViewMargin</item>
   </style>
 
   <!-- List View -->
