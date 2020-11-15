@@ -41,12 +41,14 @@ public class ParksFragment extends Fragment {
   /**
    * Creates an array list of attraction objects.
    *
-   * @param binding An instance of ParksFragment binding
+   * @param binding An instance of ParksFragment binding.
    */
   private void displayAttractionList(FragmentParksBinding binding) {
     String[] searchList = getResources().getStringArray(R.array.parksArray);
     ArrayList<Attraction> attractions = new ArrayList<>();
+    int[] attractionPhotos = photoPaths();
     final String splitBy = ";";
+    int counter = 0;
     for (String str : searchList) {
       String[] attraction = str.split(splitBy);
       String name = attraction[0];
@@ -58,13 +60,24 @@ public class ParksFragment extends Fragment {
       String hoursFriday = attraction[6];
       String hoursSaturday = attraction[7];
       String addressLineOne = attraction[8];
-      String addressLineTwo = attraction[9];
       attractions.add(new Attraction(name, hoursSunday, hoursMonday, hoursTuesday, hoursWednesday,
-          hoursThursday, hoursFriday, hoursSaturday, addressLineOne, addressLineTwo));
+          hoursThursday, hoursFriday, hoursSaturday, addressLineOne, attractionPhotos[counter]));
+      counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     AttractionAdapter recyclerAdapter = new AttractionAdapter(getContext(), attractions);
     recyclerView.setAdapter(recyclerAdapter);
+  }
+
+  /**
+   * Returns an int array of image resource identifiers for the custom attraction object.
+   *
+   * @return An int array of image resource identifiers.
+   */
+  private int[] photoPaths() {
+    return new int[]{R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
+        R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
+        R.drawable.ic_launcher_background};
   }
 }

@@ -11,11 +11,11 @@
   <ImageView
     android:id="@+id/image_attraction"
     style="@style/imageAttraction"
+    android:contentDescription="@string/a_photo_of_the_attraction"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+    app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
     app:layout_constraintEnd_toEndOf="parent"
-    android:contentDescription="@string/a_photo_of_the_attraction"
     app:layout_constraintStart_toStartOf="@id/guideline_middle_right"
     app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,7 +36,6 @@
     android:text="@string/default_hours_text"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_hours_sunday"
     app:layout_constraintEnd_toEndOf="@+id/text_hours_sunday"
     app:layout_constraintStart_toStartOf="@id/text_hours_sunday"
     app:layout_constraintTop_toBottomOf="@+id/guideline_top" />
@@ -48,10 +47,10 @@
     android:text="@string/default_address_text"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_address_one"
-    app:layout_constraintEnd_toStartOf="@+id/guideline_middle_right"
-    app:layout_constraintStart_toEndOf="@id/guideline_middle_left"
-    app:layout_constraintTop_toBottomOf="@+id/guideline_top" />
+    app:layout_constraintBottom_toTopOf="@+id/text_attraction_address"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline_middle_left"
+    app:layout_constraintTop_toBottomOf="@+id/image_attraction" />
 
   <!-- Attraction Sunday Hours -->
   <TextView
@@ -130,28 +129,16 @@
     app:layout_constraintStart_toStartOf="@+id/text_hours_sunday"
     app:layout_constraintTop_toBottomOf="@+id/text_hours_friday" />
 
-  <!-- Attraction Address Line One -->
+  <!-- Attraction Address -->
   <TextView
-    android:id="@+id/text_address_one"
+    android:id="@+id/text_attraction_address"
     style="@style/attractionAddress"
     android:text="@string/default_line_one"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_address_two"
-    app:layout_constraintEnd_toEndOf="@+id/guideline_middle_right"
-    app:layout_constraintStart_toStartOf="@+id/guideline_middle_left"
-    app:layout_constraintTop_toBottomOf="@+id/text_address_label" />
-
-  <!-- Attraction Address Line Two -->
-  <TextView
-    android:id="@+id/text_address_two"
-    style="@style/attractionAddress"
-    android:text="@string/default_line_two"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintEnd_toEndOf="@+id/guideline_middle_right"
-    app:layout_constraintStart_toStartOf="@+id/guideline_middle_left"
-    app:layout_constraintTop_toBottomOf="@id/text_address_one" />
+    app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline_middle_left" />
 
   <!-- Divider -->
   <View
@@ -159,7 +146,7 @@
     style="@style/listDivider"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+    app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent" />
 
@@ -177,7 +164,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    app:layout_constraintGuide_begin="260dp" />
+    app:layout_constraintGuide_begin="115dp" />
 
   <!-- Middle Left Guide -->
   <androidx.constraintlayout.widget.Guideline
@@ -185,7 +172,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    app:layout_constraintGuide_begin="100dp" />
+    app:layout_constraintGuide_begin="90dp" />
 
   <!-- Bottom Guide -->
   <androidx.constraintlayout.widget.Guideline

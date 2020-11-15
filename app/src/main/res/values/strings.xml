@@ -39,10 +39,7 @@
   <string name="default_saturday_text">Saturday Hours</string>
 
   <!-- Default Address Line One Text -->
-  <string name="default_line_one">Line One</string>
-
-  <!-- Default Address Line Two Text -->
-  <string name="default_line_two">Line Two</string>
+  <string name="default_line_one">123 Default Address Ave. City, ST 01234</string>
 
   <!-- Attraction image general content description -->
   <string name="a_photo_of_the_attraction">A photo of the attraction.</string>

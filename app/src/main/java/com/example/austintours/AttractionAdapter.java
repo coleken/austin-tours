@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,8 +40,8 @@ public class AttractionAdapter extends
     holder.hoursThursday.setText(attraction.getHoursThursday());
     holder.hoursFriday.setText(attraction.getHoursFriday());
     holder.hoursSaturday.setText(attraction.getHoursSaturday());
-    holder.addressLineOne.setText(attraction.getAddressLineOne());
-    holder.addressLineTwo.setText(attraction.getAddressLineTwo());
+    holder.attractionAddress.setText(attraction.getAttractionAddress());
+    holder.attractionPhoto.setImageResource(attraction.getAttractionPhoto());
   }
 
   @Override
@@ -58,8 +59,8 @@ public class AttractionAdapter extends
     public TextView hoursThursday;
     public TextView hoursFriday;
     public TextView hoursSaturday;
-    public TextView addressLineOne;
-    public TextView addressLineTwo;
+    public TextView attractionAddress;
+    public ImageView attractionPhoto;
 
     public AttractionViewHolder(@NonNull View attractionItem) {
       super(attractionItem);
@@ -71,8 +72,8 @@ public class AttractionAdapter extends
       hoursThursday = attractionItem.findViewById(R.id.text_hours_thursday);
       hoursFriday = attractionItem.findViewById(R.id.text_hours_friday);
       hoursSaturday = attractionItem.findViewById(R.id.text_hours_saturday);
-      addressLineOne = attractionItem.findViewById(R.id.text_address_one);
-      addressLineTwo = attractionItem.findViewById(R.id.text_address_two);
+      attractionAddress = attractionItem.findViewById(R.id.text_attraction_address);
+      attractionPhoto = attractionItem.findViewById(R.id.image_attraction);
     }
   }
 }
