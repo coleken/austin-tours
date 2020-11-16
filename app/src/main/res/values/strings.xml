@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">Austin Tours</string>
 
@@ -25,5 +26,8 @@
 
   <!-- Location Icon Content Description -->
   <string name="location_icon">Location Icon</string>
+
+  <!-- Geo URI Scheme (For map intent) -->
+  <string name="geoUri">geo:0,0?q=</string>
 
 </resources>

@@ -3,6 +3,8 @@ package com.example.austintours;
 import static android.widget.Toast.makeText;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,8 +40,15 @@ public class AttractionAdapter extends
     holder.name.setText(attraction.getName());
     holder.address.setText(attraction.getAddress());
     holder.photo.setImageResource(attraction.getAttractionPhoto());
+
+    // Displays the hours of operation in a toast message
     holder.hoursOfOperation.setOnClickListener(
         view -> makeText(CONTEXT, attraction.getHoursOfOperation(), Toast.LENGTH_LONG).show());
+
+    // Shows the attraction location in maps
+    holder.address.setOnClickListener(view -> CONTEXT.startActivity(
+        new Intent(Intent.ACTION_VIEW, Uri.parse(
+            CONTEXT.getResources().getString(R.string.geoUri) + attraction.getAddress()))));
   }
 
   @Override
