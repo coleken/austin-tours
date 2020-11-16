@@ -17,7 +17,7 @@
     app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="@id/guideline_middle"
-    app:layout_constraintTop_toTopOf="parent" />
+    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
   <!-- Attraction Availability Icon -->
   <ImageView
@@ -36,7 +36,7 @@
     android:contentDescription="@string/location_icon"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+    app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/image_attraction_availability" />
 
@@ -104,6 +104,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_begin="196dp" />
+    app:layout_constraintGuide_begin="150dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
