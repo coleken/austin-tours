@@ -11,14 +11,17 @@
   <!-- Default List Views Margin -->
   <dimen name="defaultListViewMargin">5dp</dimen>
 
+  <!-- Attraction Information Margin -->
+  <dimen name="attractionInfoMargin">10dp</dimen>
+
   <!-- Availability Views Margin -->
   <dimen name="availabilityViewMargin">2dp</dimen>
 
   <!-- Attraction Address Text -->
-  <dimen name="attractionAddress">10sp</dimen>
+  <dimen name="attractionAddressText">13sp</dimen>
 
   <!-- Attraction Days/Hours Availability Text -->
-  <dimen name="attractionHoursText">10sp</dimen>
+  <dimen name="attractionHoursText">13sp</dimen>
 
   <!-- Attraction Name & Section Title Text -->
   <dimen name="titleTextSize">20sp</dimen>

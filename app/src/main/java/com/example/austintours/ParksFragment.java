@@ -52,16 +52,9 @@ public class ParksFragment extends Fragment {
     for (String str : searchList) {
       String[] attraction = str.split(splitBy);
       String name = attraction[0];
-      String hoursSunday = attraction[1];
-      String hoursMonday = attraction[2];
-      String hoursTuesday = attraction[3];
-      String hoursWednesday = attraction[4];
-      String hoursThursday = attraction[5];
-      String hoursFriday = attraction[6];
-      String hoursSaturday = attraction[7];
-      String addressLineOne = attraction[8];
-      attractions.add(new Attraction(name, hoursSunday, hoursMonday, hoursTuesday, hoursWednesday,
-          hoursThursday, hoursFriday, hoursSaturday, addressLineOne, attractionPhotos[counter]));
+      String hoursOfOperation = attraction[1];
+      String address = attraction[2];
+      attractions.add(new Attraction(name, hoursOfOperation, address, attractionPhotos[counter]));
       counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;

@@ -1,11 +1,14 @@
 package com.example.austintours;
 
+import static android.widget.Toast.makeText;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -33,15 +36,10 @@ public class AttractionAdapter extends
   public void onBindViewHolder(@NonNull AttractionViewHolder holder, int position) {
     Attraction attraction = ATTRACTIONS.get(position);
     holder.name.setText(attraction.getName());
-    holder.hoursSunday.setText(attraction.getHoursSunday());
-    holder.hoursMonday.setText(attraction.getHoursMonday());
-    holder.hoursTuesday.setText(attraction.getHoursTuesday());
-    holder.hoursWednesday.setText(attraction.getHoursWednesday());
-    holder.hoursThursday.setText(attraction.getHoursThursday());
-    holder.hoursFriday.setText(attraction.getHoursFriday());
-    holder.hoursSaturday.setText(attraction.getHoursSaturday());
-    holder.attractionAddress.setText(attraction.getAttractionAddress());
-    holder.attractionPhoto.setImageResource(attraction.getAttractionPhoto());
+    holder.address.setText(attraction.getAddress());
+    holder.photo.setImageResource(attraction.getAttractionPhoto());
+    holder.hoursOfOperation.setOnClickListener(
+        view -> makeText(CONTEXT, attraction.getHoursOfOperation(), Toast.LENGTH_LONG).show());
   }
 
   @Override
@@ -52,28 +50,16 @@ public class AttractionAdapter extends
   public static class AttractionViewHolder extends RecyclerView.ViewHolder {
 
     public TextView name;
-    public TextView hoursSunday;
-    public TextView hoursMonday;
-    public TextView hoursTuesday;
-    public TextView hoursWednesday;
-    public TextView hoursThursday;
-    public TextView hoursFriday;
-    public TextView hoursSaturday;
-    public TextView attractionAddress;
-    public ImageView attractionPhoto;
+    public TextView hoursOfOperation;
+    public TextView address;
+    public ImageView photo;
 
     public AttractionViewHolder(@NonNull View attractionItem) {
       super(attractionItem);
       name = attractionItem.findViewById(R.id.text_attraction_name);
-      hoursSunday = attractionItem.findViewById(R.id.text_hours_sunday);
-      hoursMonday = attractionItem.findViewById(R.id.text_hours_monday);
-      hoursTuesday = attractionItem.findViewById(R.id.text_hours_tuesday);
-      hoursWednesday = attractionItem.findViewById(R.id.text_hours_wednesday);
-      hoursThursday = attractionItem.findViewById(R.id.text_hours_thursday);
-      hoursFriday = attractionItem.findViewById(R.id.text_hours_friday);
-      hoursSaturday = attractionItem.findViewById(R.id.text_hours_saturday);
-      attractionAddress = attractionItem.findViewById(R.id.text_attraction_address);
-      attractionPhoto = attractionItem.findViewById(R.id.image_attraction);
+      hoursOfOperation = attractionItem.findViewById(R.id.text_attraction_availability);
+      address = attractionItem.findViewById(R.id.text_attraction_address);
+      photo = attractionItem.findViewById(R.id.image_attraction);
     }
   }
 }

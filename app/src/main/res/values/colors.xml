@@ -13,5 +13,6 @@
   <color name="colorPrimaryText">#212121</color>
   <color name="colorSecondaryText">#757575</color>
   <color name="colorTextOnPrimary">#FFFFFF</color>
+  <color name="colorLink">#03A9F4</color>
 
 </resources>

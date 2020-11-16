@@ -16,8 +16,29 @@
     app:layout_constrainedWidth="true"
     app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="@id/guideline_middle_right"
+    app:layout_constraintStart_toStartOf="@id/guideline_middle"
     app:layout_constraintTop_toTopOf="parent" />
+
+  <!-- Attraction Availability Icon -->
+  <ImageView
+    android:id="@+id/image_attraction_availability"
+    style="@style/attractionAvailabilityIcon"
+    android:contentDescription="@string/a_clock_icon"
+    app:layout_constrainedHeight="true"
+    app:layout_constrainedWidth="true"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+
+  <!-- Attraction Address Icon -->
+  <ImageView
+    android:id="@+id/image_address_icon"
+    style="@style/attractionAddressIcon"
+    android:contentDescription="@string/location_icon"
+    app:layout_constrainedHeight="true"
+    app:layout_constrainedWidth="true"
+    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/image_attraction_availability" />
 
   <!-- Attraction Name -->
   <TextView
@@ -29,105 +50,16 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
-  <!-- Attraction Hours Label -->
+  <!-- Attraction Hours Of Operation -->
   <TextView
-    android:id="@+id/text_hours_label"
-    style="@style/attractionAvailabilityLabel"
-    android:text="@string/default_hours_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintEnd_toEndOf="@+id/text_hours_sunday"
-    app:layout_constraintStart_toStartOf="@id/text_hours_sunday"
-    app:layout_constraintTop_toBottomOf="@+id/guideline_top" />
-
-  <!-- Attraction Address Label -->
-  <TextView
-    android:id="@+id/text_address_label"
-    style="@style/attractionAvailabilityLabel"
-    android:text="@string/default_address_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_attraction_address"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="@+id/guideline_middle_left"
-    app:layout_constraintTop_toBottomOf="@+id/image_attraction" />
-
-  <!-- Attraction Sunday Hours -->
-  <TextView
-    android:id="@+id/text_hours_sunday"
+    android:id="@+id/text_attraction_availability"
     style="@style/attractionAvailability"
-    android:text="@string/default_sunday_text"
+    android:text="@string/hours_of_operation"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_hours_monday"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/text_hours_label" />
-
-  <!-- Attraction Monday Hours -->
-  <TextView
-    android:id="@+id/text_hours_monday"
-    style="@style/attractionAvailability"
-    android:text="@string/default_monday_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_hours_tuesday"
-    app:layout_constraintStart_toStartOf="@+id/text_hours_sunday"
-    app:layout_constraintTop_toBottomOf="@+id/text_hours_sunday" />
-
-  <!-- Attraction Tuesday Hours -->
-  <TextView
-    android:id="@+id/text_hours_tuesday"
-    style="@style/attractionAvailability"
-    android:text="@string/default_tuesday_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_hours_wednesday"
-    app:layout_constraintStart_toStartOf="@id/text_hours_sunday"
-    app:layout_constraintTop_toBottomOf="@+id/text_hours_monday" />
-
-  <!-- Attraction Wednesday Hours -->
-  <TextView
-    android:id="@+id/text_hours_wednesday"
-    style="@style/attractionAvailability"
-    android:text="@string/default_wednesday_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_hours_thursday"
-    app:layout_constraintStart_toStartOf="@id/text_hours_sunday"
-    app:layout_constraintTop_toBottomOf="@+id/text_hours_tuesday" />
-
-  <!-- Attraction Thursday Hours -->
-  <TextView
-    android:id="@+id/text_hours_thursday"
-    style="@style/attractionAvailability"
-    android:text="@string/default_thursday_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_hours_friday"
-    app:layout_constraintStart_toStartOf="@+id/text_hours_sunday"
-    app:layout_constraintTop_toBottomOf="@+id/text_hours_wednesday" />
-
-  <!-- Attraction Friday Hours -->
-  <TextView
-    android:id="@+id/text_hours_friday"
-    style="@style/attractionAvailability"
-    android:text="@string/default_friday_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/text_hours_saturday"
-    app:layout_constraintStart_toStartOf="@+id/text_hours_sunday"
-    app:layout_constraintTop_toBottomOf="@+id/text_hours_thursday" />
-
-  <!-- Attraction Saturday Hours -->
-  <TextView
-    android:id="@+id/text_hours_saturday"
-    style="@style/attractionAvailability"
-    android:text="@string/default_saturday_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
-    app:layout_constraintStart_toStartOf="@+id/text_hours_sunday"
-    app:layout_constraintTop_toBottomOf="@+id/text_hours_friday" />
+    app:layout_constraintBottom_toBottomOf="@+id/image_attraction_availability"
+    app:layout_constraintStart_toEndOf="@+id/image_attraction_availability"
+    app:layout_constraintTop_toTopOf="@+id/image_attraction_availability" />
 
   <!-- Attraction Address -->
   <TextView
@@ -136,9 +68,9 @@
     android:text="@string/default_line_one"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="@+id/guideline_middle_left" />
+    app:layout_constraintBottom_toBottomOf="@+id/image_address_icon"
+    app:layout_constraintStart_toEndOf="@+id/image_address_icon"
+    app:layout_constraintTop_toTopOf="@+id/image_address_icon" />
 
   <!-- Divider -->
   <View
@@ -158,21 +90,13 @@
     android:orientation="horizontal"
     app:layout_constraintGuide_begin="30dp" />
 
-  <!-- Middle Right Guide -->
+  <!-- Middle Guide -->
   <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_middle_right"
+    android:id="@+id/guideline_middle"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    app:layout_constraintGuide_begin="115dp" />
-
-  <!-- Middle Left Guide -->
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_middle_left"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="90dp" />
+    app:layout_constraintGuide_begin="180dp" />
 
   <!-- Bottom Guide -->
   <androidx.constraintlayout.widget.Guideline
