@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string-array name="parksArray">
-    <item>Mount Bonnell;Sun 5AM - 10PM\n\nMon 5AM - 10PM\n\nTues 5AM - 10PM\n\nWed 5AM - 10PM\n\nThurs 5AM - 10PM\n\nFriday 5AM - 10PM\n\nSat 5AM - 10PM;3800 Bonnell Dr\nAustin, TX 78731</item>
+    <item>Mount Bonnell;Sun 5AM - 10PM\n\nMon 5AM - 10PM\n\nTues 5AM - 10PM\n\nWed 5AM - 10PM\n\nThurs 5AM - 10PM\n\nFri 5AM - 10PM\n\nSat 5AM - 10PM;3800 Bonnell Dr\nAustin, TX 78731</item>
     <item>Emma Long City Park;Sun 7AM - 10PM\n\nMon 7AM - 10PM\n\nTues 7AM - 10PM\n\nWed 7AM - 10PM\n\nThurs 7AM - 10PM\n\nFri 7AM - 10PM\n\nSat 7AM - 10PM;1600 City Park Rd\nAustin, TX 78730</item>
     <item>Zilker Park;Sun 5AM - 10PM\n\nMon 5AM - 10PM\n\nTues 5AM - 10PM\n\nWed 5AM - 10PM\n\nThurs 5AM - 10PM\n\nFri 5AM - 10PM\n\nSat 5AM - 10PM;2100 Barton Springs Rd\nAustin, TX 78746</item>
     <item>McKinney Falls State Park;Sun 10AM - 8PM\n\nMon 10AM - 8PM\n\nTues 10AM - 8PM\n\nWed 10AM - 8PM\n\nThurs 10AM - 8PM\n\nFri 10AM - 8PM\n\nSat 10AM - 8PM;5808 McKinney Falls Pkwy\nAustin, TX 78744</item>
