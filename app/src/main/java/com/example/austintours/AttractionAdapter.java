@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
@@ -39,7 +40,8 @@ public class AttractionAdapter extends
     Attraction attraction = ATTRACTIONS.get(position);
     holder.name.setText(attraction.getName());
     holder.address.setText(attraction.getAddress());
-    holder.photo.setImageResource(attraction.getAttractionPhoto());
+    holder.photo
+        .setImageDrawable(ContextCompat.getDrawable(CONTEXT, attraction.getAttractionPhoto()));
 
     // Displays the hours of operation in a toast message
     holder.hoursOfOperation.setOnClickListener(
