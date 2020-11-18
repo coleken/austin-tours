@@ -70,7 +70,6 @@ public class ParksFragment extends Fragment {
    */
   private int[] photoPaths() {
     return new int[]{R.drawable.mount_bonnell, R.drawable.emma_long_park,
-        R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_background};
+        R.drawable.zilker_park, R.drawable.ic_launcher_background};
   }
 }
