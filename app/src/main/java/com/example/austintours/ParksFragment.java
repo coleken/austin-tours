@@ -69,7 +69,7 @@ public class ParksFragment extends Fragment {
    * @return An int array of image resource identifiers.
    */
   private int[] photoPaths() {
-    return new int[]{R.drawable.mount_bonnell, R.drawable.ic_launcher_background,
+    return new int[]{R.drawable.mount_bonnell, R.drawable.emma_long_park,
         R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
         R.drawable.ic_launcher_background};
   }
