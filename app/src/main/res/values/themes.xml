@@ -71,7 +71,7 @@
   <style name="attractionAvailability" parent="parentTextStyle">
     <item name="android:textSize">@dimen/attractionHoursText</item>
     <item name="android:textColor">@color/colorLink</item>
-    <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
     <item name="android:textStyle">bold</item>
   </style>
 
@@ -80,7 +80,7 @@
     <item name="android:textSize">@dimen/attractionAddressText</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:textStyle">bold</item>
-    <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
   </style>
 
   <!-- Divider -->
@@ -104,6 +104,5 @@
   </style>
 
   <style name="Theme.AustinTours.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
   <style name="Theme.AustinTours.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
