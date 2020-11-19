@@ -69,8 +69,8 @@ public class FoodFragment extends Fragment {
    * @return An int array of image resource identifiers.
    */
   private int[] photoPaths() {
-    return new int[]{R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_background, R.drawable.perrys_steakhouse,
+    return new int[]{R.drawable.kerbey_lane, R.drawable.snooze_an_am,
+        R.drawable.south_congress_cafe, R.drawable.perrys_steakhouse,
         R.drawable.hula_hut, R.drawable.trulucks_seafood};
   }
 }
