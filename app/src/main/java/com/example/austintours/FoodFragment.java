@@ -70,7 +70,7 @@ public class FoodFragment extends Fragment {
    */
   private int[] photoPaths() {
     return new int[]{R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_background, R.drawable.ic_launcher_background,
-        R.drawable.ic_launcher_background, R.drawable.ic_launcher_background};
+        R.drawable.ic_launcher_background, R.drawable.perrys_steakhouse,
+        R.drawable.hula_hut, R.drawable.trulucks_seafood};
   }
 }
