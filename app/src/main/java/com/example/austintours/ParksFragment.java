@@ -41,7 +41,7 @@ public class ParksFragment extends Fragment {
   /**
    * Creates an array list of attraction objects.
    *
-   * @param binding An instance of ParksFragment binding.
+   * @param binding An instance of ParksFragmentBinding.
    */
   private void displayAttractionList(FragmentParksBinding binding) {
     String[] searchList = getResources().getStringArray(R.array.parksArray);
