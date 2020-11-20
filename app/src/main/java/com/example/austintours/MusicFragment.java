@@ -4,58 +4,73 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import com.example.austintours.databinding.FragmentMusicBinding;
+import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass. Use the {@link MusicFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class MusicFragment extends Fragment {
 
-  // TODO: Rename parameter arguments, choose names that match
-  // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-  private static final String ARG_PARAM1 = "param1";
-  private static final String ARG_PARAM2 = "param2";
-
-  // TODO: Rename and change types of parameters
-  private String mParam1;
-  private String mParam2;
+  FragmentMusicBinding binding;
 
   public MusicFragment() {
     // Required empty public constructor
   }
 
-  /**
-   * Use this factory method to create a new instance of this fragment using the provided
-   * parameters.
-   *
-   * @param param1 Parameter 1.
-   * @param param2 Parameter 2.
-   * @return A new instance of fragment MusicFragment.
-   */
-  // TODO: Rename and change types and number of parameters
-  public static MusicFragment newInstance(String param1, String param2) {
-    MusicFragment fragment = new MusicFragment();
-    Bundle args = new Bundle();
-    args.putString(ARG_PARAM1, param1);
-    args.putString(ARG_PARAM2, param2);
-    fragment.setArguments(args);
-    return fragment;
-  }
-
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    if (getArguments() != null) {
-      mParam1 = getArguments().getString(ARG_PARAM1);
-      mParam2 = getArguments().getString(ARG_PARAM2);
-    }
   }
 
   @Override
-  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+  public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
       Bundle savedInstanceState) {
-    // Inflate the layout for this fragment
-    return inflater.inflate(R.layout.fragment_music, container, false);
+    binding = FragmentMusicBinding.inflate(inflater, container, false);
+    displayAttractionList(binding);
+    return binding.getRoot();
+  }
+
+  @Override
+  public void onDestroy() {
+    super.onDestroy();
+    binding = null;
+  }
+
+  /**
+   * Creates an array list of attraction objects.
+   *
+   * @param binding An instance of MusicFragmentBinding.
+   */
+  private void displayAttractionList(FragmentMusicBinding binding) {
+    String[] searchList = getResources().getStringArray(R.array.musicArray);
+    ArrayList<Attraction> attractions = new ArrayList<>();
+    int[] attractionPhotos = photoPaths();
+    final String splitBy = ";";
+    int counter = 0;
+    for (String str : searchList) {
+      String[] attraction = str.split(splitBy);
+      String name = attraction[0];
+      String hoursOfOperation = attraction[1];
+      String address = attraction[2];
+      attractions.add(new Attraction(name, hoursOfOperation, address, attractionPhotos[counter]));
+      counter++;
+    }
+    RecyclerView recyclerView = binding.listAttractionItems;
+    recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+    AttractionAdapter recyclerAdapter = new AttractionAdapter(getContext(), attractions);
+    recyclerView.setAdapter(recyclerAdapter);
+  }
+
+  /**
+   * Returns an int array of image resource identifiers for the custom attraction object.
+   *
+   * @return An int array of image resource identifiers.
+   */
+  private int[] photoPaths() {
+    return new int[]{R.drawable.austin_city_limits, R.drawable.hole_in_the_wall,
+        R.drawable.skylark_lounge, R.drawable.ic_launcher_background,
+        R.drawable.ic_launcher_background, R.drawable.ic_launcher_background};
   }
 }

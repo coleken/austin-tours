@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="musicArray">
+    <item>Austin City Limits;Sun Closed\n\nMon 8AM - 6PM\n\nTues 8AM - 6PM\n\nWed 8AM - 6PM\n\nThurs 8AM - 12AM\n\nFri 8AM - 12AM\n\nSat 11AM - 12AM;310 W 2nd St\nAustin, TX 78701</item>
+    <item>Hole in the Wall;Sun 3PM - 2AM\n\nMon 3PM - 2AM\n\nTues 3PM - 2AM\n\nWed 3PM - 2AM\n\nThurs 3PM - 2AM\n\nFri 3PM - 2AM\n\nSat 3PM - 2AM;2538 Guadalupe St\nAustin, TX 78705</item>
+    <item>Skylark Lounge;Sun 5PM - 12AM\n\nMon 5PM - 12AM\n\nTues 5PM - 12AM\n\nWed 5PM - 12AM\n\nThurs 5PM - 12AM\n\nFri 5PM - 1AM\n\nSat 5PM - 1AM;2039 Airport Blvd\nAustin, TX 78722</item>
+  </string-array>
+</resources>
