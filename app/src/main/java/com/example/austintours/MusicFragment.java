@@ -70,7 +70,6 @@ public class MusicFragment extends Fragment {
    */
   private int[] photoPaths() {
     return new int[]{R.drawable.austin_city_limits, R.drawable.hole_in_the_wall,
-        R.drawable.skylark_lounge, R.drawable.austin_convention_center,
-        R.drawable.ic_launcher_background, R.drawable.ic_launcher_background};
+        R.drawable.skylark_lounge, R.drawable.austin_convention_center};
   }
 }
