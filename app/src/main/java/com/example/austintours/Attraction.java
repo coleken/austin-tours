@@ -39,7 +39,7 @@ public class Attraction {
   }
 
   /**
-   * Returns the hours of operation of the attration.
+   * Returns the hours of operation of the attraction.
    *
    * @return A string with the hours of operation.
    */

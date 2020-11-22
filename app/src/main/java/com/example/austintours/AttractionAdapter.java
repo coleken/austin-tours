@@ -22,6 +22,12 @@ public class AttractionAdapter extends
   private final Context CONTEXT;
   private final ArrayList<Attraction> ATTRACTIONS;
 
+  /**
+   * AttractionAdapter constructor for recycler view.
+   *
+   * @param context     An instance of context.
+   * @param attractions An array list of custom attraction objects.
+   */
   public AttractionAdapter(Context context, ArrayList<Attraction> attractions) {
     this.CONTEXT = context;
     this.ATTRACTIONS = attractions;
@@ -58,6 +64,9 @@ public class AttractionAdapter extends
     return ATTRACTIONS.size();
   }
 
+  /**
+   * Defines the view holder for the AttractionAdapter class
+   */
   public static class AttractionViewHolder extends RecyclerView.ViewHolder {
 
     public TextView name;
@@ -65,6 +74,11 @@ public class AttractionAdapter extends
     public TextView address;
     public ImageView photo;
 
+    /**
+     * Defines the attraction items for the attraction adapter class.
+     *
+     * @param attractionItem An instance of View
+     */
     public AttractionViewHolder(@NonNull View attractionItem) {
       super(attractionItem);
       name = attractionItem.findViewById(R.id.text_attraction_name);
