@@ -29,5 +29,6 @@
 
   <!-- Geo URI Scheme (For map intent) -->
   <string name="geoUri">geo:0,0?q=</string>
+  <string name="a_photo_collage_of_austin">A photo collage of Austin</string>
 
 </resources>

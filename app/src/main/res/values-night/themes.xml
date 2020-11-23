@@ -2,15 +2,106 @@
   <!-- Base application theme. -->
   <style name="Theme.AustinTours" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
     <!-- Primary brand color. -->
-    <item name="colorPrimary">@color/purple_200</item>
-    <item name="colorPrimaryVariant">@color/purple_700</item>
-    <item name="colorOnPrimary">@color/black</item>
-    <!-- Secondary brand color. -->
-    <item name="colorSecondary">@color/teal_200</item>
-    <item name="colorSecondaryVariant">@color/teal_200</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+    <item name="colorOnPrimary">@color/white</item>
     <item name="colorOnSecondary">@color/black</item>
+    <item name="android:fontFamily">@font/palanquin_dark</item>
     <!-- Status bar color. -->
     <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     <!-- Customize your theme here. -->
   </style>
+
+  <!-- Attraction Image -->
+  <style name="imageAttraction">
+    <item name="android:layout_width">150dp</item>
+    <item name="android:layout_height">100dp</item>
+    <item name="android:adjustViewBounds">true</item>
+    <item name="android:scaleType">fitCenter</item>
+    <item name="android:layout_margin">@dimen/defaultListViewMargin</item>
+  </style>
+
+  <!-- Custom Tab Theme -->
+  <style name="customTabLayout" parent="Widget.Design.TabLayout">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="tabTextAppearance">@style/customTabLayoutText</item>
+    <item name="tabGravity">fill</item>
+  </style>
+
+  <!-- Custom Tab Text -->
+  <style name="customTabLayoutText" parent="TextAppearance.Design.Tab">
+    <item name="android:textSize">@dimen/customTabTextSize</item>
+  </style>
+
+  <!-- Attraction TextView -->
+  <style name="parentTextStyle" parent="Theme.AustinTours">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/colorPrimaryText</item>
+  </style>
+
+  <!-- Attraction Name -->
+  <style name="attractionName" parent="parentTextStyle">
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">@dimen/titleTextSize</item>
+  </style>
+
+  <!-- Attraction Days/Hours Availability Label-->
+  <style name="attractionAvailabilityIcon" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionHoursText</item>
+    <item name="android:layout_marginTop">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
+    <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
+    <item name="android:src">@drawable/ic_attraction_hours</item>
+  </style>
+
+  <!-- Attraction Address Label-->
+  <style name="attractionAddressIcon" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionAddressText</item>
+    <item name="android:layout_marginTop">@dimen/attractionInfoMargin</item>
+    <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
+    <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
+    <item name="android:src">@drawable/ic_attraction_location</item>
+  </style>
+
+  <!-- Attraction Days/Hours Availability -->
+  <style name="attractionAvailability" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionHoursText</item>
+    <item name="android:textColor">@color/colorLink</item>
+    <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <!-- Attraction Address -->
+  <style name="attractionAddress" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionAddressText</item>
+    <item name="android:textColor">@color/colorLink</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
+  </style>
+
+  <!-- Divider -->
+  <style name="listDivider" parent="Theme.AustinTours">
+    <item name="android:layout_height">1dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:background">@color/colorDivider</item>
+    <item name="android:layout_marginBottom">@dimen/defaultListViewMargin</item>
+  </style>
+
+  <!-- List View -->
+  <style name="listView" parent="Theme.AustinTours">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/colorPrimaryText</item>
+  </style>
+
+  <style name="Theme.AustinTours.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="Theme.AustinTours.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+  <style name="Theme.AustinTours.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

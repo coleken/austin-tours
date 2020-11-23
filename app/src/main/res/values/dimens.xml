@@ -11,6 +11,9 @@
   <!-- Default List Views Margin -->
   <dimen name="defaultListViewMargin">5dp</dimen>
 
+  <!-- Margin Below Attraction Name -->
+  <dimen name="marginBelowName">10dp</dimen>
+
   <!-- List Item Text Start Margin -->
   <dimen name="listItemTextStartMargin">2dp</dimen>
 
