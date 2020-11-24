@@ -45,7 +45,7 @@
     <item name="android:gravity">center</item>
     <item name="android:minHeight">?actionBarSize</item>
     <item name="android:text">@string/app_name</item>
-    <item name="android:textAppearance">TextAppearance.Widget.AppCompat.Toolbar.Title"</item>
+    <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title</item>
   </style>
 
   <!-- Attraction TextView -->
