@@ -18,7 +18,10 @@
     <item name="android:layout_height">100dp</item>
     <item name="android:adjustViewBounds">true</item>
     <item name="android:scaleType">fitCenter</item>
-    <item name="android:layout_margin">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginTop">@dimen/marginBelowName</item>
+    <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginBottom">@dimen/defaultListViewMargin</item>
   </style>
 
   <!-- Custom Tab Theme -->
@@ -34,6 +37,17 @@
     <item name="android:textSize">@dimen/customTabTextSize</item>
   </style>
 
+  <!-- App Title Text -->
+  <style name="appTitle" parent="Theme.AustinTours">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:padding">@dimen/appbar_padding</item>
+    <item name="android:gravity">center</item>
+    <item name="android:minHeight">?actionBarSize</item>
+    <item name="android:text">@string/app_name</item>
+    <item name="android:textAppearance">@style/TextAppearance.Widget.AppCompat.Toolbar.Title</item>
+  </style>
+
   <!-- Attraction TextView -->
   <style name="parentTextStyle" parent="Theme.AustinTours">
     <item name="android:layout_height">wrap_content</item>
@@ -43,14 +57,12 @@
 
   <!-- Attraction Name -->
   <style name="attractionName" parent="parentTextStyle">
-    <item name="android:textStyle">bold</item>
     <item name="android:textSize">@dimen/titleTextSize</item>
   </style>
 
   <!-- Attraction Days/Hours Availability Label-->
   <style name="attractionAvailabilityIcon" parent="parentTextStyle">
-    <item name="android:textSize">@dimen/attractionHoursText</item>
-    <item name="android:layout_marginTop">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginTop">@dimen/marginBelowName</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
     <item name="android:src">@drawable/ic_attraction_hours</item>
@@ -58,7 +70,6 @@
 
   <!-- Attraction Address Label-->
   <style name="attractionAddressIcon" parent="parentTextStyle">
-    <item name="android:textSize">@dimen/attractionAddressText</item>
     <item name="android:layout_marginTop">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
@@ -70,14 +81,12 @@
     <item name="android:textSize">@dimen/attractionHoursText</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
-    <item name="android:textStyle">bold</item>
   </style>
 
   <!-- Attraction Address -->
   <style name="attractionAddress" parent="parentTextStyle">
     <item name="android:textSize">@dimen/attractionAddressText</item>
     <item name="android:textColor">@color/colorLink</item>
-    <item name="android:textStyle">bold</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
   </style>
 
