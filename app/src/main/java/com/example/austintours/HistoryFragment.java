@@ -70,6 +70,7 @@ public class HistoryFragment extends Fragment {
    */
   private int[] photoPaths() {
     return new int[]{R.drawable.bullock_museum, R.drawable.lbj_library,
-        R.drawable.neill_cochran_museum, R.drawable.washington_carver_museum};
+        R.drawable.neill_cochran_museum, R.drawable.washington_carver_museum,
+        R.drawable.elisabet_ney_museum};
   }
 }
