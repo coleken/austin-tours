@@ -14,7 +14,7 @@
     android:contentDescription="@string/a_photo_of_the_attraction"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
+    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="@id/guideline_middle"
     app:layout_constraintTop_toTopOf="@+id/guideline_top" />
@@ -27,7 +27,15 @@
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
+    app:layout_constraintTop_toBottomOf="@+id/text_attraction_name" />
+
+  <!-- Attraction Website Icon -->
+  <ImageView
+    android:id="@+id/image_attraction_website"
+    style="@style/attractionWebsiteIcon"
+    android:contentDescription="@string/a_globe_icon"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/image_attraction_availability" />
 
   <!-- Attraction Address Icon -->
   <ImageView
@@ -36,9 +44,9 @@
     android:contentDescription="@string/location_icon"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/divider_attraction_end"
+    app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/image_attraction_availability" />
+    app:layout_constraintTop_toBottomOf="@+id/image_attraction_website" />
 
   <!-- Attraction Name -->
   <TextView
@@ -47,6 +55,7 @@
     android:text="@string/default_attraction_text"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
+    app:layout_constraintBottom_toTopOf="@+id/image_attraction_availability"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,14 +70,24 @@
     app:layout_constraintStart_toEndOf="@+id/image_attraction_availability"
     app:layout_constraintTop_toTopOf="@+id/image_attraction_availability" />
 
+  <!-- Attraction Website -->
+  <TextView
+    android:id="@+id/text_attraction_website"
+    style="@style/attractionAddress"
+    android:text="@string/default_website"
+    app:layout_constrainedHeight="true"
+    app:layout_constrainedWidth="true"
+    app:layout_constraintBottom_toBottomOf="@+id/image_attraction_website"
+    app:layout_constraintStart_toEndOf="@+id/image_attraction_website"
+    app:layout_constraintTop_toTopOf="@+id/image_attraction_website" />
+
   <!-- Attraction Address -->
   <TextView
     android:id="@+id/text_attraction_address"
     style="@style/attractionAddress"
-    android:text="@string/default_line_one"
+    android:text="@string/default_address"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toBottomOf="@+id/image_address_icon"
     app:layout_constraintStart_toEndOf="@+id/image_address_icon"
     app:layout_constraintTop_toTopOf="@+id/image_address_icon" />
 
@@ -78,9 +97,10 @@
     style="@style/listDivider"
     app:layout_constrainedHeight="true"
     app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toBottomOf="@id/guideline_bottom"
+    app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent" />
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/text_attraction_address" />
 
   <!-- Top Guide -->
   <androidx.constraintlayout.widget.Guideline
@@ -104,6 +124,6 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    app:layout_constraintGuide_begin="150dp" />
+    app:layout_constraintGuide_begin="160dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,9 +3,10 @@ package com.example.austintours;
 public class Attraction {
 
   private String name;
-  private String hoursOfOperation;
+  private String hours;
   private String address;
-  private int attractionPhoto;
+  private String website;
+  private int photo;
 
   /**
    * Default attraction constructor.
@@ -17,16 +18,19 @@ public class Attraction {
   /**
    * Constructor used to create an array list of custom attraction objects.
    *
-   * @param name             A string for the name of the attraction.
-   * @param hoursOfOperation A string for the hours of operation
-   * @param address          A string for the address.
-   * @param attractionPhoto  An int for the id of the attraction photo.
+   * @param name    A string for the name of the attraction.
+   * @param hours   A string for the hours of operation
+   * @param address A string for the address.
+   * @param website A string for the website.
+   * @param photo   An int for the id of the attraction photo.
    */
-  public Attraction(String name, String hoursOfOperation, String address, int attractionPhoto) {
-    this.hoursOfOperation = hoursOfOperation;
+  public Attraction(String name, String hours, String website, String address,
+      int photo) {
+    this.hours = hours;
     this.name = name;
     this.address = address;
-    this.attractionPhoto = attractionPhoto;
+    this.website = website;
+    this.photo = photo;
   }
 
   /**
@@ -43,8 +47,8 @@ public class Attraction {
    *
    * @return A string with the hours of operation.
    */
-  public String getHoursOfOperation() {
-    return hoursOfOperation;
+  public String getHours() {
+    return hours;
   }
 
   /**
@@ -57,11 +61,20 @@ public class Attraction {
   }
 
   /**
+   * Returns a string with the attraction website.
+   *
+   * @return A string with the attraction website.
+   */
+  public String getWebsite() {
+    return website;
+  }
+
+  /**
    * Returns an int containing the resource identifier of the attraction photo.
    *
    * @return An int with the resource identifier of the attraction photo.
    */
-  public int getAttractionPhoto() {
-    return attractionPhoto;
+  public int getPhoto() {
+    return photo;
   }
 }

@@ -46,17 +46,18 @@ public class AttractionAdapter extends
     Attraction attraction = ATTRACTIONS.get(position);
     holder.name.setText(attraction.getName());
     holder.address.setText(attraction.getAddress());
-    holder.photo
-        .setImageDrawable(ContextCompat.getDrawable(CONTEXT, attraction.getAttractionPhoto()));
-
-    // Displays the hours of operation in a toast message
-    holder.hoursOfOperation.setOnClickListener(
-        view -> makeText(CONTEXT, attraction.getHoursOfOperation(), Toast.LENGTH_LONG).show());
-
     // Shows the attraction location in maps
     holder.address.setOnClickListener(view -> CONTEXT.startActivity(
         new Intent(Intent.ACTION_VIEW, Uri.parse(
             CONTEXT.getResources().getString(R.string.geoUri) + attraction.getAddress()))));
+    // Shows the attraction website
+    holder.website.setOnClickListener(view -> CONTEXT
+        .startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(attraction.getWebsite()))));
+    // Displays the hours of operation in a toast message
+    holder.hours.setOnClickListener(
+        view -> makeText(CONTEXT, attraction.getHours(), Toast.LENGTH_LONG).show());
+    holder.photo
+        .setImageDrawable(ContextCompat.getDrawable(CONTEXT, attraction.getPhoto()));
   }
 
   @Override
@@ -70,7 +71,8 @@ public class AttractionAdapter extends
   public static class AttractionViewHolder extends RecyclerView.ViewHolder {
 
     public TextView name;
-    public TextView hoursOfOperation;
+    public TextView hours;
+    public TextView website;
     public TextView address;
     public ImageView photo;
 
@@ -82,8 +84,9 @@ public class AttractionAdapter extends
     public AttractionViewHolder(@NonNull View attractionItem) {
       super(attractionItem);
       name = attractionItem.findViewById(R.id.text_attraction_name);
-      hoursOfOperation = attractionItem.findViewById(R.id.text_attraction_availability);
+      hours = attractionItem.findViewById(R.id.text_attraction_availability);
       address = attractionItem.findViewById(R.id.text_attraction_address);
+      website = attractionItem.findViewById(R.id.text_attraction_website);
       photo = attractionItem.findViewById(R.id.image_attraction);
     }
   }

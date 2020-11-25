@@ -46,15 +46,16 @@ public class FoodFragment extends Fragment {
   private void displayAttractionList(FragmentFoodBinding binding) {
     String[] searchList = getResources().getStringArray(R.array.foodArray);
     ArrayList<Attraction> attractions = new ArrayList<>();
-    int[] attractionPhotos = photoPaths();
+    int[] photos = attractionPhotos();
     final String splitBy = ";";
     int counter = 0;
     for (String str : searchList) {
       String[] attraction = str.split(splitBy);
       String name = attraction[0];
-      String hoursOfOperation = attraction[1];
-      String address = attraction[2];
-      attractions.add(new Attraction(name, hoursOfOperation, address, attractionPhotos[counter]));
+      String hours = attraction[1];
+      String website = attraction[2];
+      String address = attraction[3];
+      attractions.add(new Attraction(name, hours, website, address, photos[counter]));
       counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;
@@ -68,7 +69,7 @@ public class FoodFragment extends Fragment {
    *
    * @return An int array of image resource identifiers.
    */
-  private int[] photoPaths() {
+  private int[] attractionPhotos() {
     return new int[]{R.drawable.kerbey_lane, R.drawable.snooze_an_am,
         R.drawable.south_congress_cafe, R.drawable.perrys_steakhouse,
         R.drawable.hula_hut, R.drawable.trulucks_seafood};

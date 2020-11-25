@@ -5,6 +5,12 @@
   <dimen name="appbar_padding">16dp</dimen>
   <dimen name="appbar_padding_top">8dp</dimen>
 
+  <!-- Attraction Photo Height -->
+  <dimen name="attractionPhotoHeight">100dp</dimen>
+
+  <!-- Attraction Photo Width -->
+  <dimen name="attractionPhotoWidth">150dp</dimen>
+
   <!-- Tab Layout Text Size -->
   <dimen name="customTabTextSize">10sp</dimen>
 
@@ -12,13 +18,16 @@
   <dimen name="defaultListViewMargin">5dp</dimen>
 
   <!-- Margin Below Attraction Name -->
-  <dimen name="marginBelowName">10dp</dimen>
+  <dimen name="infoMarginBelowName">10dp</dimen>
+
+  <!-- Margin Below Attraction Name -->
+  <dimen name="photoMarginBelowName">20dp</dimen>
 
   <!-- List Item Text Start Margin -->
   <dimen name="listItemTextStartMargin">2dp</dimen>
 
   <!-- Attraction Information Margin -->
-  <dimen name="attractionInfoMargin">10dp</dimen>
+  <dimen name="attractionInfoMargin">15dp</dimen>
 
   <!-- Availability Views Margin -->
   <dimen name="availabilityViewMargin">2dp</dimen>
