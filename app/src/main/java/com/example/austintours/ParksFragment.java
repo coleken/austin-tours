@@ -46,15 +46,16 @@ public class ParksFragment extends Fragment {
   private void displayAttractionList(FragmentParksBinding binding) {
     String[] searchList = getResources().getStringArray(R.array.parksArray);
     ArrayList<Attraction> attractions = new ArrayList<>();
-    int[] attractionPhotos = photoPaths();
+    int[] photos = attractionPhotos();
     final String splitBy = ";";
     int counter = 0;
     for (String str : searchList) {
       String[] attraction = str.split(splitBy);
       String name = attraction[0];
-      String hoursOfOperation = attraction[1];
-      String address = attraction[2];
-      attractions.add(new Attraction(name, hoursOfOperation, address, attractionPhotos[counter]));
+      String hours = attraction[1];
+      String website = attraction[2];
+      String address = attraction[3];
+      attractions.add(new Attraction(name, hours, website, address, photos[counter]));
       counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;
@@ -68,7 +69,7 @@ public class ParksFragment extends Fragment {
    *
    * @return An int array of image resource identifiers.
    */
-  private int[] photoPaths() {
+  private int[] attractionPhotos() {
     return new int[]{R.drawable.mount_bonnell, R.drawable.emma_long_park,
         R.drawable.zilker_park, R.drawable.mckinney_falls};
   }
