@@ -46,15 +46,16 @@ public class MusicFragment extends Fragment {
   private void displayAttractionList(FragmentMusicBinding binding) {
     String[] searchList = getResources().getStringArray(R.array.musicArray);
     ArrayList<Attraction> attractions = new ArrayList<>();
-    int[] attractionPhotos = photoPaths();
+    int[] photos = attractionPhotos();
     final String splitBy = ";";
     int counter = 0;
     for (String str : searchList) {
       String[] attraction = str.split(splitBy);
       String name = attraction[0];
-      String hoursOfOperation = attraction[1];
-      String address = attraction[2];
-      attractions.add(new Attraction(name, hoursOfOperation, address, attractionPhotos[counter]));
+      String hours = attraction[1];
+      String website = attraction[2];
+      String address = attraction[3];
+      attractions.add(new Attraction(name, hours, website, address, photos[counter]));
       counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;
@@ -68,7 +69,7 @@ public class MusicFragment extends Fragment {
    *
    * @return An int array of image resource identifiers.
    */
-  private int[] photoPaths() {
+  private int[] attractionPhotos() {
     return new int[]{R.drawable.austin_city_limits, R.drawable.hole_in_the_wall,
         R.drawable.skylark_lounge, R.drawable.austin_convention_center, R.drawable.zach_theater};
   }
