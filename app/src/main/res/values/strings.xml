@@ -12,16 +12,16 @@
   <string name="default_attraction_text">Attraction</string>
 
   <!-- Default Address Text -->
-  <string name="default_address">123 Default Address Ave City, ST 01234</string>
+  <string name="address">123 Default Address Ave City, ST 01234</string>
 
   <!-- Website Text -->
-  <string name="default_website">Visit Website</string>
+  <string name="website">Visit Website</string>
 
   <!-- Attraction image general content description -->
   <string name="a_photo_of_the_attraction">A photo of the attraction.</string>
 
   <!-- Hours of Operation Text -->
-  <string name="hours_of_operation">Check Availability</string>
+  <string name="hours">Check Availability</string>
 
   <!-- Hours Icon Content Description -->
   <string name="a_clock_icon">A clock icon.</string>

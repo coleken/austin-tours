@@ -1,129 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:id="@+id/constraintLayout"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content"
-  app:layout_constrainedHeight="true"
-  app:layout_constrainedWidth="true">
+  android:id="@+id/itemCardView"
+  style="@style/attractionCardView"
+  app:cardCornerRadius="@dimen/cardCornerRadius">
 
-  <!-- Attraction Photo -->
-  <ImageView
-    android:id="@+id/image_attraction"
-    style="@style/imageAttraction"
-    android:contentDescription="@string/a_photo_of_the_attraction"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="@id/guideline_middle"
-    app:layout_constraintTop_toTopOf="@+id/guideline_top" />
-
-  <!-- Attraction Availability Icon -->
-  <ImageView
-    android:id="@+id/image_attraction_availability"
-    style="@style/attractionAvailabilityIcon"
-    android:contentDescription="@string/a_clock_icon"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/text_attraction_name" />
-
-  <!-- Attraction Website Icon -->
-  <ImageView
-    android:id="@+id/image_attraction_website"
-    style="@style/attractionWebsiteIcon"
-    android:contentDescription="@string/a_globe_icon"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/image_attraction_availability" />
-
-  <!-- Attraction Address Icon -->
-  <ImageView
-    android:id="@+id/image_address_icon"
-    style="@style/attractionAddressIcon"
-    android:contentDescription="@string/location_icon"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/image_attraction_website" />
-
-  <!-- Attraction Name -->
-  <TextView
-    android:id="@+id/text_attraction_name"
-    style="@style/attractionName"
-    android:text="@string/default_attraction_text"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toTopOf="@+id/image_attraction_availability"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-  <!-- Attraction Hours Of Operation -->
-  <TextView
-    android:id="@+id/text_attraction_availability"
-    style="@style/attractionAvailability"
-    android:text="@string/hours_of_operation"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toBottomOf="@+id/image_attraction_availability"
-    app:layout_constraintStart_toEndOf="@+id/image_attraction_availability"
-    app:layout_constraintTop_toTopOf="@+id/image_attraction_availability" />
-
-  <!-- Attraction Website -->
-  <TextView
-    android:id="@+id/text_attraction_website"
-    style="@style/attractionAddress"
-    android:text="@string/default_website"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toBottomOf="@+id/image_attraction_website"
-    app:layout_constraintStart_toEndOf="@+id/image_attraction_website"
-    app:layout_constraintTop_toTopOf="@+id/image_attraction_website" />
-
-  <!-- Attraction Address -->
-  <TextView
-    android:id="@+id/text_attraction_address"
-    style="@style/attractionAddress"
-    android:text="@string/default_address"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintStart_toEndOf="@+id/image_address_icon"
-    app:layout_constraintTop_toTopOf="@+id/image_address_icon" />
-
-  <!-- Divider -->
-  <View
-    android:id="@+id/divider_attraction_end"
-    style="@style/listDivider"
-    app:layout_constrainedHeight="true"
-    app:layout_constrainedWidth="true"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/text_attraction_address" />
-
-  <!-- Top Guide -->
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_top"
-    android:layout_width="wrap_content"
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/itemConstraintLayout"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="30dp" />
+    android:clipToPadding="false">
 
-  <!-- Middle Guide -->
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_middle"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    app:layout_constraintGuide_begin="185dp" />
+    <!-- Attraction Photo -->
+    <ImageView
+      android:id="@+id/image_attraction"
+      style="@style/imageAttraction"
+      android:contentDescription="@string/a_photo_of_the_attraction"
+      app:layout_constrainedHeight="true"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/guideline_middle"
+      app:layout_constraintTop_toTopOf="@+id/guideline_top" />
 
-  <!-- Bottom Guide -->
-  <androidx.constraintlayout.widget.Guideline
-    android:id="@+id/guideline_bottom"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    app:layout_constraintGuide_begin="160dp" />
+    <!-- Attraction Availability Icon -->
+    <ImageView
+      android:id="@+id/image_attraction_availability"
+      style="@style/attractionAvailabilityIcon"
+      android:contentDescription="@string/a_clock_icon"
+      app:layout_constrainedHeight="true"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text_attraction_name" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Attraction Website Icon -->
+    <ImageView
+      android:id="@+id/image_attraction_website"
+      style="@style/attractionWebsiteIcon"
+      android:contentDescription="@string/a_globe_icon"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/image_attraction_availability" />
+
+    <!-- Attraction Address Icon -->
+    <ImageView
+      android:id="@+id/image_address_icon"
+      style="@style/attractionAddressIcon"
+      android:contentDescription="@string/location_icon"
+      app:layout_constrainedHeight="true"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/image_attraction_website" />
+
+    <!-- Attraction Name -->
+    <TextView
+      android:id="@+id/text_attraction_name"
+      style="@style/attractionName"
+      android:text="@string/default_attraction_text"
+      app:layout_constrainedHeight="true"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Attraction Hours Of Operation -->
+    <TextView
+      android:id="@+id/text_attraction_availability"
+      style="@style/attractionAvailability"
+      app:layout_constrainedHeight="true"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintBottom_toBottomOf="@+id/image_attraction_availability"
+      app:layout_constraintStart_toEndOf="@+id/image_attraction_availability"
+      app:layout_constraintTop_toTopOf="@+id/image_attraction_availability" />
+
+    <!-- Attraction Website -->
+    <TextView
+      android:id="@+id/text_attraction_website"
+      style="@style/attractionWebsite"
+      app:layout_constrainedHeight="true"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintBottom_toBottomOf="@+id/image_attraction_website"
+      app:layout_constraintStart_toEndOf="@+id/image_attraction_website"
+      app:layout_constraintTop_toTopOf="@+id/image_attraction_website" />
+
+    <!-- Attraction Address -->
+    <TextView
+      android:id="@+id/text_attraction_address"
+      style="@style/attractionAddress"
+      app:layout_constrainedHeight="true"
+      app:layout_constrainedWidth="true"
+      app:layout_constraintBottom_toBottomOf="@+id/image_address_icon"
+      app:layout_constraintStart_toEndOf="@+id/image_address_icon"
+      app:layout_constraintTop_toTopOf="@+id/image_address_icon" />
+
+    <!-- Top Guide -->
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_top"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="30dp" />
+
+    <!-- Middle Guide -->
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_middle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="180dp" />
+
+    <!-- Bottom Guide -->
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline_bottom"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="175dp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

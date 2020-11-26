@@ -12,12 +12,21 @@
     <!-- Customize your theme here. -->
   </style>
 
+  <!-- Attraction Item Card View -->
+  <style name="attractionCardView" parent="Theme.AustinTours">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_margin">@dimen/marginCardView</item>
+    <item name="android:elevation">@dimen/cardViewElevation</item>
+    <item name="android:gravity">center</item>
+  </style>
+
   <!-- Attraction Image -->
   <style name="imageAttraction">
     <item name="android:layout_width">@dimen/attractionPhotoWidth</item>
     <item name="android:layout_height">@dimen/attractionPhotoHeight</item>
     <item name="android:adjustViewBounds">true</item>
-    <item name="android:scaleType">fitCenter</item>
+    <item name="android:scaleType">center</item>
     <item name="android:layout_marginTop">@dimen/photoMarginBelowName</item>
     <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
     <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
@@ -58,6 +67,8 @@
   <!-- Attraction Name -->
   <style name="attractionName" parent="parentTextStyle">
     <item name="android:textSize">@dimen/titleTextSize</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_margin">@dimen/defaultListViewMargin</item>
   </style>
 
   <!-- Attraction Days/Hours Availability Label-->
@@ -65,6 +76,7 @@
     <item name="android:layout_marginTop">@dimen/infoMarginBelowName</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
+    <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
     <item name="android:src">@drawable/ic_attraction_hours</item>
   </style>
 
@@ -74,6 +86,7 @@
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
     <item name="android:src">@drawable/ic_attraction_website</item>
+    <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
   </style>
 
   <!-- Attraction Address Label-->
@@ -82,11 +95,13 @@
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
     <item name="android:src">@drawable/ic_attraction_location</item>
+    <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
   </style>
 
   <!-- Attraction Days/Hours Availability -->
   <style name="attractionAvailability" parent="parentTextStyle">
     <item name="android:textSize">@dimen/attractionHoursText</item>
+    <item name="android:text">@string/hours</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
   </style>
@@ -94,6 +109,16 @@
   <!-- Attraction Address -->
   <style name="attractionAddress" parent="parentTextStyle">
     <item name="android:textSize">@dimen/attractionAddressText</item>
+    <item name="android:text">@string/address</item>
+    <item name="android:textColor">@color/colorLink</item>
+    <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
+    <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
+  </style>
+
+  <!-- Attraction Website -->
+  <style name="attractionWebsite" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/attractionAddressText</item>
+    <item name="android:text">@string/website</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
@@ -110,7 +135,7 @@
   <!-- List View -->
   <style name="listView" parent="Theme.AustinTours">
     <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_width">match_parent</item>
     <item name="android:textColor">@color/colorPrimaryText</item>
   </style>
 

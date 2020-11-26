@@ -24,7 +24,7 @@
   <dimen name="photoMarginBelowName">20dp</dimen>
 
   <!-- List Item Text Start Margin -->
-  <dimen name="listItemTextStartMargin">2dp</dimen>
+  <dimen name="listItemTextStartMargin">5dp</dimen>
 
   <!-- Attraction Information Margin -->
   <dimen name="attractionInfoMargin">15dp</dimen>
@@ -41,4 +41,12 @@
   <!-- Attraction Name & Section Title Text -->
   <dimen name="titleTextSize">20sp</dimen>
 
+  <!-- Card View Layout Margin -->
+  <dimen name="marginCardView">10dp</dimen>
+
+  <!-- Card View Elevation -->
+  <dimen name="cardViewElevation">5dp</dimen>
+
+  <!--Card View Corner Radius -->
+  <dimen name="cardCornerRadius">7dp</dimen>
 </resources>
