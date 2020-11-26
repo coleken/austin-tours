@@ -5,6 +5,8 @@ import static android.widget.Toast.makeText;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,19 +47,38 @@ public class AttractionAdapter extends
   public void onBindViewHolder(@NonNull AttractionViewHolder holder, int position) {
     Attraction attraction = ATTRACTIONS.get(position);
     holder.name.setText(attraction.getName());
-    holder.address.setText(attraction.getAddress());
+    // Underline and set address text
+    SpannableString address = formatText(attraction.getAddress());
+    holder.address.setText(address);
     // Shows the attraction location in maps
-    holder.address.setOnClickListener(view -> CONTEXT.startActivity(
-        new Intent(Intent.ACTION_VIEW, Uri.parse(
-            CONTEXT.getResources().getString(R.string.geoUri) + attraction.getAddress()))));
+    holder.address.setOnClickListener(view -> CONTEXT.startActivity(new Intent(Intent.ACTION_VIEW,
+        Uri.parse(CONTEXT.getResources().getString(R.string.geoUri) + attraction.getAddress()))));
+    // Underline and set website text
+    SpannableString website = formatText(CONTEXT.getResources().getString(R.string.website));
+    holder.website.setText(website);
     // Shows the attraction website
     holder.website.setOnClickListener(view -> CONTEXT
         .startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(attraction.getWebsite()))));
+    // Underline and set website text
+    SpannableString hours = formatText(CONTEXT.getResources().getString(R.string.hours));
+    holder.hours.setText(hours);
     // Displays the hours of operation in a toast message
     holder.hours.setOnClickListener(
         view -> makeText(CONTEXT, attraction.getHours(), Toast.LENGTH_LONG).show());
-    holder.photo
-        .setImageDrawable(ContextCompat.getDrawable(CONTEXT, attraction.getPhoto()));
+    holder.photo.setImageDrawable(ContextCompat.getDrawable(CONTEXT, attraction.getPhoto()));
+  }
+
+  /**
+   * Returns a spannable string with the attraction item underlined.
+   *
+   * @param attractionInfo A String containing attraction item information.
+   * @return A spannable string with the attraction item information.
+   */
+  @NonNull
+  private SpannableString formatText(String attractionInfo) {
+    SpannableString UnderlinedInfo = new SpannableString(attractionInfo);
+    UnderlinedInfo.setSpan(new UnderlineSpan(), 0, UnderlinedInfo.length(), 0);
+    return UnderlinedInfo;
   }
 
   @Override
@@ -66,7 +87,7 @@ public class AttractionAdapter extends
   }
 
   /**
-   * Defines the view holder for the AttractionAdapter class
+   * Defines the view holder for the AttractionAdapter class.
    */
   public static class AttractionViewHolder extends RecyclerView.ViewHolder {
 
