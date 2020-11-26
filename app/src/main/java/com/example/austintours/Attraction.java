@@ -24,8 +24,7 @@ public class Attraction {
    * @param website A string for the website.
    * @param photo   An int for the id of the attraction photo.
    */
-  public Attraction(String name, String hours, String website, String address,
-      int photo) {
+  public Attraction(String name, String hours, String website, String address, int photo) {
     this.hours = hours;
     this.name = name;
     this.address = address;
