@@ -72,5 +72,32 @@ public class ParksFragment extends Fragment {
   private int[] attractionPhotos() {
     return new int[]{R.drawable.mount_bonnell, R.drawable.emma_long_park,
         R.drawable.zilker_park, R.drawable.mckinney_falls};
+    /*
+     * Attraction Photo Image Sources
+     *
+     * File Name: mount_bonnell.png
+     * Original Name: megan-markham-s9vKj39D6jA-unsplash.jpg
+     * Artist/Owner: Megan Markham
+     * File URL: https://unsplash.com/photos/s9vKj39D6jA
+     * Date Retrieved: Monday, November 16th, 2020
+     *
+     * File Name: emma_long_park.png
+     * Original Name: GettyImages-155015268-5b31274d8e1b6e003695036e.webp
+     * Artist/Owner: JodiJacobson / Getty Images
+     * File URL: https://www.tripsavvy.com/emma-long-park-austin-texas-complete-guide-4167619
+     * Date Retrieved: Tuesday, November 27th, 2020
+     *
+     * File Name: zilker_park.png
+     * Original Name: GettyImages-500491816-5a830da3c6733500377bd4e4.webp
+     * Artist/Owner: RoschetzkyIstockPhoto / Getty Images
+     * File URL: https://www.tripsavvy.com/the-top-things-to-do-in-zilker-park-in-austin-4158303
+     * Date Retrieved: Tuesday, November 17th, 2020
+     *
+     * File Name: mckinney_falls
+     * Original Name: mckinney-falls-state-park-1126832088-b484fa59bded43fcb24e76ca5f147b8a.webp
+     * Artist/Owner: ShengYing Lin / Getty Images
+     * File URL: mckinney-falls-state-park-1126832088-b484fa59bded43fcb24e76ca5f147b8a.webp
+     * Date Retrieved: Tuesday, November 17th, 2020
+     */
   }
 }
