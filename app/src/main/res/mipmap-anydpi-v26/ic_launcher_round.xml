@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-  <background android:drawable="@drawable/ic_launcher_background" />
-  <foreground android:drawable="@drawable/ic_launcher_foreground" />
+  <background android:drawable="@mipmap/ic_launcher_background" />
+  <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+  <!--
+  Foreground Logo Photo Resources
+
+  Position: Row 1, Picture 1
+  Original Name: mj-tangonan-wKfTNWaDYgs-unsplash.jpg
+  Artist/Owner: MJ Tangonan
+  File URL: https://unsplash.com/photos/wKfTNWaDYgs
+  Date Retrieved: Saturday, November 21st, 2020
+
+  Position: Row 1, Picture 2
+  Original Name: cosmic-timetraveler-c1IsxIyvkfk-unsplash.jpg
+  Artist/Owner: Cosmic Timetraveler
+  File URL: https://unsplash.com/photos/c1IsxIyvkfk
+  Date Retrieved: Saturday, November 21st, 2020
+
+  Position: Row 1, Picture 3
+  Original Name: cosmic-timetraveler-c7jn_0eWVwQ-unsplash.jpg
+  Artist/Owner: Cosmic Timetraveler
+  File URL: https://unsplash.com/photos/c7jn_0eWVwQ
+  Date Retrieved: Saturday, November 21st, 2020
+
+  Position: Row 2, Picture 1
+  Original Name: charles-fair-GYmDIpuNkGo-unsplash.jpg
+  Artist/Owner: Charles Fair
+  File URL: https://unsplash.com/photos/GYmDIpuNkGo
+  Date Retrieved: Saturday, November 21st, 2020
+
+  Position: Row 2, Picture 2
+  Original Name: dayo-adepoju-pbrvz7emGDE-unsplash.jpg
+  Artist/Owner: Dayo Adepoju
+  File URL: https://unsplash.com/photos/pbrvz7emGDE
+  Date Retrieved: Saturday, November 21st, 2020
+
+  Position: Row 2, Picture 3
+  Original Name: jeremy-banks-s3uwt1QyvV0-unsplash.jpg
+  Artist/Owner: Jeremy Banks
+  File URL: https://unsplash.com/photos/s3uwt1QyvV0
+  Date Retrieved: Saturday, November 21st, 2020
+
+  Background Image Resource:
+
+  Artist/Owner: Apple, Inc.
+  File Origin: Screenshot of Austin, TX in Apple Maps
+  -->
 </adaptive-icon>
