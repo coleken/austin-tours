@@ -91,11 +91,11 @@ public class AttractionAdapter extends
    */
   public static class AttractionViewHolder extends RecyclerView.ViewHolder {
 
-    public TextView name;
-    public TextView hours;
-    public TextView website;
-    public TextView address;
-    public ImageView photo;
+    final public TextView name;
+    final public TextView hours;
+    final public TextView website;
+    final public TextView address;
+    final public ImageView photo;
 
     /**
      * Defines the attraction items for the attraction adapter class.

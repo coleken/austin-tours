@@ -131,12 +131,15 @@
     <item name="android:textColor">@color/colorPrimaryText</item>
   </style>
 
+  <!-- Action Bar -->
   <style name="Theme.AustinTours.NoActionBar">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
 
+  <!-- App Bar Overlay -->
   <style name="Theme.AustinTours.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
+  <!-- Popup Overlay -->
   <style name="Theme.AustinTours.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -71,7 +71,7 @@ public class MusicFragment extends Fragment {
    */
   private int[] attractionPhotos() {
     return new int[]{R.drawable.austin_city_limits, R.drawable.hole_in_the_wall,
-        R.drawable.skylark_lounge, R.drawable.austin_convention_center, R.drawable.zach_theater};
+        R.drawable.skylark_lounge, R.drawable.sxsw_center, R.drawable.zach_theater};
     /*
      * Attraction Photo Image Sources
      *
@@ -93,11 +93,11 @@ public class MusicFragment extends Fragment {
      * File URL: https://s3-media0.fl.yelpcdn.com/bphoto/HBH60wlItRmXwsqG1Zum8g/o.jpg
      * Date Retrieved: Thursday, November 19th, 2020
      *
-     * File Name: austin_convention_center.png
-     * Original Name: _MG_5185_Atrium_Day.jpg
-     * Artist/Owner: Austin Convention Center
-     * File URL: https://images.ctfassets.net/xv1q576gx3e5/2w86FZfs2cygASc8yWi4wY/e11371f0c8d9413a6cd9d0f4391576cb/_MG_5185_Atrium_Day.jpg?w=1800
-     * Date Retrieved: Thursday, November 19th, 2020
+     * File Name: sxsw_center.png
+     * Original Name: 1__18_of_19_.0.jpg
+     * Artist/Owner: SXSW
+     * File URL: https://cdn.vox-cdn.com/uploads/chorus_image/image/64823298/1__18_of_19_.0.jpg
+     * Date Retrieved: Thursday, November 26th, 2020
      *
      * File Name: zach_theater.png
      * Original Name: ZACH-Topfer-1170_Exterior.jpg
