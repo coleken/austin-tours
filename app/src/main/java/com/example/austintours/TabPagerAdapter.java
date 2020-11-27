@@ -7,40 +7,35 @@ import static com.example.austintours.R.string.tab_4;
 
 import android.content.Context;
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 /**
- * A [FragmentPagerAdapter] that returns a fragment corresponding to one of the tabs.
+ * A [FragmentStateAdapter] that returns a fragment corresponding to one of the tabs.
  */
-public class TabPagerAdapter extends FragmentPagerAdapter {
+public class TabPagerAdapter extends FragmentStateAdapter {
 
-  private final Context CONTEXT;
   private final int[] TAB_TITLES = {tab_1, tab_2, tab_3, tab_4};
   private final Fragment[] ATTRACTIONS = new Fragment[]{new HistoryFragment(), new FoodFragment(),
       new MusicFragment(), new ParksFragment()};
 
-  public TabPagerAdapter(Context context, FragmentManager fm) {
-    super(fm);
-    this.CONTEXT = context;
+  public TabPagerAdapter(FragmentActivity fragmentActivity) {
+    super(fragmentActivity);
   }
 
   @NonNull
   @Override
-  public Fragment getItem(int position) {
+  public Fragment createFragment(int position) {
     return ATTRACTIONS[position];
   }
 
-  @Nullable
   @Override
-  public CharSequence getPageTitle(int position) {
-    return CONTEXT.getResources().getString(TAB_TITLES[position]);
+  public int getItemCount() {
+    return ATTRACTIONS.length;
   }
 
-  @Override
-  public int getCount() {
-    return ATTRACTIONS.length;
+  public CharSequence getPageTitle(int position, @NonNull Context context) {
+    return context.getResources().getString(TAB_TITLES[position]);
   }
 }
