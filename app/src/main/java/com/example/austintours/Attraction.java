@@ -1,5 +1,8 @@
 package com.example.austintours;
 
+/**
+ * A custom class that contains attraction location information.
+ */
 public class Attraction {
 
   private String name;

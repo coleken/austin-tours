@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.austintours.databinding.FragmentHistoryBinding;
 import java.util.ArrayList;
 
+/**
+ * A fragment for history attractions.
+ */
 public class HistoryFragment extends Fragment {
 
   FragmentHistoryBinding binding;

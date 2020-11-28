@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.austintours.databinding.FragmentFoodBinding;
 import java.util.ArrayList;
 
+/**
+ * A fragment for food attractions.
+ */
 public class FoodFragment extends Fragment {
 
   FragmentFoodBinding binding;

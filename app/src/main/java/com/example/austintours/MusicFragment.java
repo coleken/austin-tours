@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.austintours.databinding.FragmentMusicBinding;
 import java.util.ArrayList;
 
+/**
+ * A fragment for music attractions.
+ */
 public class MusicFragment extends Fragment {
 
   FragmentMusicBinding binding;
