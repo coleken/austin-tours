@@ -39,13 +39,13 @@
   <dimen name="nameTextSize">20sp</dimen>
 
   <!-- Alert Title Text Size -->
-  <dimen name="alertTitleTextSize">15dp</dimen>
+  <dimen name="alertTitleTextSize">16dp</dimen>
 
   <!-- Card View Layout Margin -->
   <dimen name="marginCardView">10dp</dimen>
 
   <!-- Card View Elevation -->
-  <dimen name="elevationCardView">5dp</dimen>
+  <dimen name="elevationCardView">7dp</dimen>
 
   <!--Card View Corner Radius -->
   <dimen name="cornerRadiusCardView">7dp</dimen>
