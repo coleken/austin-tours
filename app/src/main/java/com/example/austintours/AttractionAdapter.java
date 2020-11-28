@@ -89,9 +89,7 @@ public class AttractionAdapter extends
    * @param hours A string containing the attraction hours.
    */
   private void showHoursAlert(String name, String hours) {
-    Builder builder = new Builder(CONTEXT, R.style.alertDialog);
-    builder.setTitle(name);
-    builder.setMessage(hours);
+    Builder builder = new Builder(CONTEXT, R.style.alertDialog).setTitle(name).setMessage(hours);
     builder.setPositiveButton(R.string.alert_button, null);
     builder.show();
   }

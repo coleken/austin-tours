@@ -104,6 +104,7 @@
     <item name="android:text">@string/hours</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
+    <item name="android:background">?selectableItemBackground</item>
   </style>
 
   <!-- Attraction Address -->
@@ -113,6 +114,7 @@
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
+    <item name="android:background">?selectableItemBackground</item>
   </style>
 
   <!-- Attraction Website -->
@@ -122,6 +124,7 @@
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
+    <item name="android:background">?selectableItemBackground</item>
   </style>
 
   <!-- List View -->
