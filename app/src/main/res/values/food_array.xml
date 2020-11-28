@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string-array name="foodArray">
-    <item>Kerbey Lane Cafe;Sun 7AM - 10PM\n\nMon 7AM - 10PM\n\nTues 7AM - 10PM\n\nWed 7AM - 10PM\n\nThurs 7AM - 10PM\n\nFri 7AM - 10PM\n\nSat 7AM - 10PM;https://kerbeylanecafe.com;3704 Kerbey Ln\nAustin, TX 78731</item>
-    <item>Snooze An A.M. Eatery;Sun 6:30AM - 2:30PM\n\nMon 6:30AM - 2:30PM\n\nTues 6:30AM - 2:30PM\n\nWed 6:30AM - 2:30PM\n\nThurs 6:30AM - 2:30PM\n\nFri 6:30AM - 2:30PM\n\nSat 6:30AM - 2:30PM;https://www.snoozeeatery.com/branches/1791/snooze-south-lamar;1700 S Lamar Blvd 301\nAustin, TX 78756</item>
-    <item>South Congress Cafe;Sun 10AM - 9PM\n\nMon 11AM - 9PM\n\nTues 11AM - 9PM\n\nWed 11AM - 9PM\n\nThurs 11AM - 9PM\n\nFri 11AM - 9PM\n\nSat 10AM - 9PM;http://www.southcongresscafe.com;1600 S Congress Ave\nAustin, TX 78704</item>
-    <item>Perry\'s Steakhouse &amp; Grille;Sun 4PM - 9PM\n\nMon 4PM - 9PM\n\nTues 4PM - 9PM\n\nWed 4PM - 9PM\n\nThurs 4PM - 9PM\n\nFri 10:30AM - 10PM\n\nSat 4PM - 10PM;https://perryssteakhouse.com/locations/tx/austin/downtown;114 W 7th St\nAustin, TX 78701</item>
-    <item>Hula Hut;Sun 10:30AM - 10PM\n\nMon 11AM - 10PM\n\nTues 11AM - 10PM\n\nWed 11AM - 10PM\n\nThurs 11AM - 10PM\n\nFri 11AM - 11PM\n\nSat 10:30AM - 11PM;https://www.hulahut.com/locations/austin;3825 Lake Austin Blvd\nAustin, TX 78703</item>
-    <item>Truluck\'s Ocean\'s Seafood &amp; Crab;Sun 4:30PM - 9:30PM\n\nMon 4:30PM - 9:30PM\n\nTues 4:30PM - 9:30PM\n\nWed 4:30PM - 9:30PM\n\nThurs 4:30PM - 9:30PM\n\nFri 4:30PM - 10PM\n\nSat 4:30PM - 10PM;https://trulucks.com/locations/downtown-austin-texas;400 Colorado St\nAustin, TX 78701</item>
+    <item>Kerbey Lane Cafe;Sun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM;https://kerbeylanecafe.com;3704 Kerbey Ln\nAustin, TX 78731</item>
+    <item>Snooze An A.M. Eatery;Sun:\t\t6:30AM - 2:30PM\n\nMon:\t\t6:30AM - 2:30PM\n\nTues:\t\t6:30AM - 2:30PM\n\nWed:\t\t6:30AM - 2:30PM\n\nThurs:\t\t6:30AM - 2:30PM\n\nFri:\t\t6:30AM - 2:30PM\n\nSat:\t\t6:30AM - 2:30PM;https://www.snoozeeatery.com/branches/1791/snooze-south-lamar;1700 S Lamar Blvd 301\nAustin, TX 78756</item>
+    <item>South Congress Cafe;Sun:\t\t10AM - 9PM\n\nMon:\t\t11AM - 9PM\n\nTues:\t\t11AM - 9PM\n\nWed:\t\t11AM - 9PM\n\nThurs:\t\t11AM - 9PM\n\nFri:\t\t11AM - 9PM\n\nSat:\t\t10AM - 9PM;http://www.southcongresscafe.com;1600 S Congress Ave\nAustin, TX 78704</item>
+    <item>Perry\'s Steakhouse &amp; Grille;Sun:\t\t4PM - 9PM\n\nMon:\t\t4PM - 9PM\n\nTues:\t\t4PM - 9PM\n\nWed:\t\t4PM - 9PM\n\nThurs:\t\t4PM - 9PM\n\nFri:\t\t10:30AM - 10PM\n\nSat:\t\t4PM - 10PM;https://perryssteakhouse.com/locations/tx/austin/downtown;114 W 7th St\nAustin, TX 78701</item>
+    <item>Hula Hut;Sun:\t\t10:30AM - 10PM\n\nMon:\t\t11AM - 10PM\n\nTues:\t\t11AM - 10PM\n\nWed:\t\t11AM - 10PM\n\nThurs:\t\t11AM - 10PM\n\nFri:\t\t11AM - 11PM\n\nSat:\t\t10:30AM - 11PM;https://www.hulahut.com/locations/austin;3825 Lake Austin Blvd\nAustin, TX 78703</item>
+    <item>Truluck\'s Ocean\'s Seafood &amp; Crab;Sun:\t\t4:30PM - 9:30PM\n\nMon:\t\t4:30PM - 9:30PM\n\nTues:\t\t4:30PM - 9:30PM\n\nWed:\t\t4:30PM - 9:30PM\n\nThurs:\t\t4:30PM - 9:30PM\n\nFri:\t\t4:30PM - 10PM\n\nSat:\t\t4:30PM - 10PM;https://trulucks.com/locations/downtown-austin-texas;400 Colorado St\nAustin, TX 78701</item>
   </string-array>
 </resources>
