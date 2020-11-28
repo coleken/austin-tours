@@ -17,7 +17,7 @@
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">wrap_content</item>
     <item name="android:layout_margin">@dimen/marginCardView</item>
-    <item name="android:elevation">@dimen/cardViewElevation</item>
+    <item name="android:elevation">@dimen/elevationCardView</item>
     <item name="android:gravity">center</item>
   </style>
 
@@ -66,13 +66,13 @@
 
   <!-- Attraction Name -->
   <style name="attractionName" parent="parentTextStyle">
-    <item name="android:textSize">@dimen/titleTextSize</item>
+    <item name="android:textSize">@dimen/nameTextSize</item>
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_margin">@dimen/defaultListViewMargin</item>
   </style>
 
-  <!-- Attraction Days/Hours Availability Label-->
-  <style name="attractionAvailabilityIcon" parent="parentTextStyle">
+  <!-- Attraction Days/Hours Availability Icon -->
+  <style name="attractionHoursIcon" parent="parentTextStyle">
     <item name="android:layout_marginTop">@dimen/infoMarginBelowName</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginEnd">@dimen/defaultListViewMargin</item>
@@ -80,7 +80,7 @@
     <item name="android:src">@drawable/ic_attraction_hours</item>
   </style>
 
-  <!-- Attraction Website Label-->
+  <!-- Attraction Website Icon -->
   <style name="attractionWebsiteIcon" parent="parentTextStyle">
     <item name="android:layout_marginTop">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
@@ -89,7 +89,7 @@
     <item name="android:layout_marginStart">@dimen/defaultListViewMargin</item>
   </style>
 
-  <!-- Attraction Address Label-->
+  <!-- Attraction Address Icon -->
   <style name="attractionAddressIcon" parent="parentTextStyle">
     <item name="android:layout_marginTop">@dimen/attractionInfoMargin</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
@@ -99,8 +99,8 @@
   </style>
 
   <!-- Attraction Days/Hours Availability -->
-  <style name="attractionAvailability" parent="parentTextStyle">
-    <item name="android:textSize">@dimen/attractionHoursText</item>
+  <style name="attractionHours" parent="parentTextStyle">
+    <item name="android:textSize">@dimen/hoursTextSize</item>
     <item name="android:text">@string/hours</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginStart">@dimen/listItemTextStartMargin</item>
@@ -108,7 +108,7 @@
 
   <!-- Attraction Address -->
   <style name="attractionAddress" parent="parentTextStyle">
-    <item name="android:textSize">@dimen/attractionAddressText</item>
+    <item name="android:textSize">@dimen/addressTextSize</item>
     <item name="android:text">@string/address</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
@@ -117,7 +117,7 @@
 
   <!-- Attraction Website -->
   <style name="attractionWebsite" parent="parentTextStyle">
-    <item name="android:textSize">@dimen/attractionAddressText</item>
+    <item name="android:textSize">@dimen/addressTextSize</item>
     <item name="android:text">@string/website</item>
     <item name="android:textColor">@color/colorLink</item>
     <item name="android:layout_marginBottom">@dimen/attractionInfoMargin</item>
@@ -142,4 +142,15 @@
 
   <!-- Popup Overlay -->
   <style name="Theme.AustinTours.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+  <!-- Alert Dialog -->
+  <style name="alertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:fontFamily">@font/palanquin_dark</item>
+    <item name="android:textColor">@color/colorPrimaryText</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center_horizontal</item>
+    <item name="android:textSize">@dimen/alertTitleTextSize</item>
+    <item name="colorAccent">@color/colorLink</item>
+  </style>
+
 </resources>

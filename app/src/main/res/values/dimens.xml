@@ -30,20 +30,23 @@
   <dimen name="attractionInfoMargin">15dp</dimen>
 
   <!-- Attraction Address Text -->
-  <dimen name="attractionAddressText">12sp</dimen>
+  <dimen name="addressTextSize">12sp</dimen>
 
-  <!-- Attraction Days/Hours Availability Text -->
-  <dimen name="attractionHoursText">13sp</dimen>
+  <!-- Attraction Days/Hours Availability Text Size -->
+  <dimen name="hoursTextSize">13sp</dimen>
 
-  <!-- Attraction Name & Section Title Text -->
-  <dimen name="titleTextSize">20sp</dimen>
+  <!-- Attraction Name Text Size -->
+  <dimen name="nameTextSize">20sp</dimen>
+
+  <!-- Alert Title Text Size -->
+  <dimen name="alertTitleTextSize">15dp</dimen>
 
   <!-- Card View Layout Margin -->
   <dimen name="marginCardView">10dp</dimen>
 
   <!-- Card View Elevation -->
-  <dimen name="cardViewElevation">5dp</dimen>
+  <dimen name="elevationCardView">5dp</dimen>
 
   <!--Card View Corner Radius -->
-  <dimen name="cardCornerRadius">7dp</dimen>
+  <dimen name="cornerRadiusCardView">7dp</dimen>
 </resources>

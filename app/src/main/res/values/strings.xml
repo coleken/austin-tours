@@ -35,4 +35,7 @@
   <!-- Geo URI Scheme (For map intent) -->
   <string name="geoUri">geo:0,0?q=</string>
 
+  <!-- Alert Dialog Button -->
+  <string name="alert_button">OK</string>
+
 </resources>

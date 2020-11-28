@@ -1,7 +1,6 @@
 package com.example.austintours;
 
-import static android.widget.Toast.makeText;
-
+import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -12,12 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
+/**
+ * A custom adapter class to display a list of attractions.
+ */
 public class AttractionAdapter extends
     RecyclerView.Adapter<AttractionAdapter.AttractionViewHolder> {
 
@@ -27,7 +28,7 @@ public class AttractionAdapter extends
   /**
    * AttractionAdapter constructor for recycler view.
    *
-   * @param context     An instance of context.
+   * @param context     An instance of the current context.
    * @param attractions An array list of custom attraction objects.
    */
   public AttractionAdapter(Context context, ArrayList<Attraction> attractions) {
@@ -63,8 +64,8 @@ public class AttractionAdapter extends
     SpannableString hours = formatText(CONTEXT.getResources().getString(R.string.hours));
     holder.hours.setText(hours);
     // Displays the hours of operation in a toast message
-    holder.hours.setOnClickListener(
-        view -> makeText(CONTEXT, attraction.getHours(), Toast.LENGTH_LONG).show());
+    holder.hours
+        .setOnClickListener(view -> showHoursAlert(attraction.getName(), attraction.getHours()));
     holder.photo.setImageDrawable(ContextCompat.getDrawable(CONTEXT, attraction.getPhoto()));
   }
 
@@ -81,13 +82,27 @@ public class AttractionAdapter extends
     return UnderlinedInfo;
   }
 
+  /**
+   * Displays an alert dialog showing the attraction name and hours.
+   *
+   * @param name  A string containing the attraction name.
+   * @param hours A string containing the attraction hours.
+   */
+  private void showHoursAlert(String name, String hours) {
+    Builder builder = new Builder(CONTEXT, R.style.alertDialog);
+    builder.setTitle(name);
+    builder.setMessage(hours);
+    builder.setPositiveButton(R.string.alert_button, null);
+    builder.show();
+  }
+
   @Override
   public int getItemCount() {
     return ATTRACTIONS.size();
   }
 
   /**
-   * Defines the view holder for the AttractionAdapter class.
+   * A view holder class for the AttractionAdapter class.
    */
   public static class AttractionViewHolder extends RecyclerView.ViewHolder {
 
@@ -105,7 +120,7 @@ public class AttractionAdapter extends
     public AttractionViewHolder(@NonNull View attractionItem) {
       super(attractionItem);
       name = attractionItem.findViewById(R.id.text_attraction_name);
-      hours = attractionItem.findViewById(R.id.text_attraction_availability);
+      hours = attractionItem.findViewById(R.id.text_attraction_hours);
       address = attractionItem.findViewById(R.id.text_attraction_address);
       website = attractionItem.findViewById(R.id.text_attraction_website);
       photo = attractionItem.findViewById(R.id.image_attraction);
