@@ -8,7 +8,7 @@ Austin Tours is an application for the Android operating system that provides a 
 * Java Version: 1.8
 
 ## Installation
-Clone the Podcast Structure repository:
+Clone the Austin Tours repository:
 
 `$ https://github.com/coleken/austin-tours.git`
 
