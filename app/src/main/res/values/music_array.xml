@@ -6,64 +6,14 @@
 * Each item contains (in this order): Name, Hours, Website, Address
 * Each item uses (\n) and (\t) for formatting.
 * Example item:
-  Name;
-  \nDay1:\t\tXXAM - XXPM
-  \n\nDay2:\t\tXXAM - XXPM
-  \n\nDay3:\t\tXXAM - XXPM
-  \n\nDay4:\t\tXXAM - XXPM
-  \n\nDay5:\t\tXXAM - XXPM
-  \n\nDay6:\t\tXXAM - XXPM
-  \n\nDay7:\t\tXXAM - XXPM;
-  https://www.example.com;
-  123 Example St\nCity, State 12345
+  Name;\nDay1:\t\tXXAM - XXPM\n\nDay2:\t\tXXAM - XXPM\n\nDay3:\t\tXXAM - XXPM\n\nDay4:\t\tXXAM - XXPM\n\nDay5:\t\tXXAM - XXPM\n\nDay6:\t\tXXAM - XXPM\n\nDay7:\t\tXXAM - XXPM;https://www.example.com;123 Example St\nCity, State 12345
 -->
 <resources>
   <string-array name="musicArray">
-    <item>Austin City Limits;
-      \nSun:\t\tClosed
-      \n\nMon:\t\t8AM - 6PM
-      \n\nTues:\t\t8AM - 6PM
-      \n\nWed:\t\t8AM - 6PM
-      \n\nThurs:\t\t8AM - 12AM
-      \n\nFri:\t\t8AM - 12AM
-      \n\nSat:\t\t11AM - 12AM;
-      https://acl-live.com;
-      310 W Willie Nelson Blvd\nAustin, TX 78701</item>
-    <item>Hole in the Wall;
-      \nSun:\t\t3PM - 2AM
-      \n\nMon:\t\t3PM - 2AM
-      \n\nTues:\t\t3PM - 2AM
-      \n\nWed:\t\t3PM - 2AM
-      \n\nThurs:\t\t3PM - 2AM
-      \n\nFri:\t\t3PM - 2AM
-      \n\nSat:\t\t3PM - 2AM;
-      https://www.holeinthewallaustin.com;
-      2538 Guadalupe St\nAustin, TX 78705</item>
-    <item>Skylark Lounge;
-      \nSun:\t\t5PM - 12AM
-      \n\nMon:\t\t5PM - 12AM
-      \n\nTues:\t\t5PM - 12AM
-      \n\nWed:\t\t5PM - 12AM
-      \n\nThurs:\t\t5PM - 12AM
-      \n\nFri:\t\t5PM - 1AM
-      \n\nSat:\t\t5PM - 1AM;
-      http://skylarkaustin.com;
-      2039 Airport Blvd\nAustin, TX 78722</item>
-    <item>South by Southwest Festival;
-      \nPlease Note:
-      \n\nThis is an annual event and its dates are subject to change.
-      \n\nCheck the website for details!;
-      https://www.sxsw.com;
-      1400 Lavaca St\nAustin, TX 78701</item>
-    <item>ZACH Theater;
-      \nSun:\t\tClosed
-      \n\nMon:\t\t12PM - 7PM
-      \n\nTues:\t\t12PM - 7PM
-      \n\nWed:\t\t12PM - 7PM
-      \n\nThurs:\t\t12PM - 7PM
-      \n\nFri:\t\t12PM - 7PM
-      \n\nSat:\t\t12PM - 7PM;
-      https://zachtheatre.org;
-      202 S Lamar Blvd\nAustin, TX 78704</item>
+    <item>Austin City Limits;\nSun:\t\tClosed\n\nMon:\t\t8AM - 6PM\n\nTues:\t\t8AM - 6PM\n\nWed:\t\t8AM - 6PM\n\nThurs:\t\t8AM - 12AM\n\nFri:\t\t8AM - 12AM\n\nSat:\t\t11AM - 12AM;https://acl-live.com;310 W Willie Nelson Blvd\nAustin, TX 78701</item>
+    <item>Hole in the Wall;\nSun:\t\t3PM - 2AM\n\nMon:\t\t3PM - 2AM\n\nTues:\t\t3PM - 2AM\n\nWed:\t\t3PM - 2AM\n\nThurs:\t\t3PM - 2AM\n\nFri:\t\t3PM - 2AM\n\nSat:\t\t3PM - 2AM;https://www.holeinthewallaustin.com;2538 Guadalupe St\nAustin, TX 78705</item>
+    <item>Skylark Lounge;\nSun:\t\t5PM - 12AM\n\nMon:\t\t5PM - 12AM\n\nTues:\t\t5PM - 12AM\n\nWed:\t\t5PM - 12AM\n\nThurs:\t\t5PM - 12AM\n\nFri:\t\t5PM - 1AM\n\nSat:\t\t5PM - 1AM;http://skylarkaustin.com;2039 Airport Blvd\nAustin, TX 78722</item>
+    <item>South by Southwest Festival;\nPlease Note:\n\nThis is an annual event and its dates are subject to change.\n\nCheck the website for details!;https://www.sxsw.com;1400 Lavaca St\nAustin, TX 78701</item>
+    <item>ZACH Theater;\nSun:\t\tClosed\n\nMon:\t\t12PM - 7PM\n\nTues:\t\t12PM - 7PM\n\nWed:\t\t12PM - 7PM\n\nThurs:\t\t12PM - 7PM\n\nFri:\t\t12PM - 7PM\n\nSat:\t\t12PM - 7PM;https://zachtheatre.org;202 S Lamar Blvd\nAustin, TX 78704</item>
   </string-array>
 </resources>

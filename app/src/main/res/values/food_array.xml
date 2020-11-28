@@ -6,78 +6,15 @@
 * Each item contains (in this order): Name, Hours, Website, Address
 * Each item uses (\n) and (\t) for formatting.
 * Example item:
-  Name;
-  \nDay1:\t\tXXAM - XXPM
-  \n\nDay2:\t\tXXAM - XXPM
-  \n\nDay3:\t\tXXAM - XXPM
-  \n\nDay4:\t\tXXAM - XXPM
-  \n\nDay5:\t\tXXAM - XXPM
-  \n\nDay6:\t\tXXAM - XXPM
-  \n\nDay7:\t\tXXAM - XXPM;
-  https://www.example.com;
-  123 Example St\nCity, State 12345
+  Name;\nDay1:\t\tXXAM - XXPM\n\nDay2:\t\tXXAM - XXPM\n\nDay3:\t\tXXAM - XXPM\n\nDay4:\t\tXXAM - XXPM\n\nDay5:\t\tXXAM - XXPM\n\nDay6:\t\tXXAM - XXPM\n\nDay7:\t\tXXAM - XXPM;https://www.example.com;123 Example St\nCity, State 12345
 -->
 <resources>
   <string-array name="foodArray">
-    <item>Kerbey Lane Cafe;
-      \nSun:\t\t7AM - 10PM
-      \n\nMon:\t\t7AM - 10PM
-      \n\nTues:\t\t7AM - 10PM
-      \n\nWed:\t\t7AM - 10PM
-      \n\nThurs:\t\t7AM - 10PM
-      \n\nFri:\t\t7AM - 10PM
-      \n\nSat:\t\t7AM - 10PM;
-      https://kerbeylanecafe.com;
-      3704 Kerbey Ln\nAustin, TX 78731</item>
-    <item>Snooze An A.M. Eatery;
-      \nSun:\t\t6:30AM - 2:30PM
-      \n\nMon:\t\t6:30AM - 2:30PM
-      \n\nTues:\t\t6:30AM - 2:30PM
-      \n\nWed:\t\t6:30AM - 2:30PM
-      \n\nThurs:\t\t6:30AM - 2:30PM
-      \n\nFri:\t\t6:30AM - 2:30PM
-      \n\nSat:\t\t6:30AM - 2:30PM;
-      https://www.snoozeeatery.com/branches/1791/snooze-south-lamar;
-      1700 S Lamar Blvd 301\nAustin, TX 78756</item>
-    <item>South Congress Cafe;
-      \nSun:\t\t10AM - 9PM
-      \n\nMon:\t\t11AM - 9PM
-      \n\nTues:\t\t11AM - 9PM
-      \n\nWed:\t\t11AM - 9PM
-      \n\nThurs:\t\t11AM - 9PM
-      \n\nFri:\t\t11AM - 9PM
-      \n\nSat:\t\t10AM - 9PM;
-      http://www.southcongresscafe.com;
-      1600 S Congress Ave\nAustin, TX 78704</item>
-    <item>Perry\'s Steakhouse &amp; Grille;
-      \nSun:\t\t4PM - 9PM
-      \n\nMon:\t\t4PM - 9PM
-      \n\nTues:\t\t4PM - 9PM
-      \n\nWed:\t\t4PM - 9PM
-      \n\nThurs:\t\t4PM - 9PM
-      \n\nFri:\t\t10:30AM - 10PM
-      \n\nSat:\t\t4PM - 10PM;
-      https://perryssteakhouse.com/locations/tx/austin/downtown;
-      114 W 7th St\nAustin, TX 78701</item>
-    <item>Hula Hut;
-      \nSun:\t\t10:30AM - 10PM
-      \n\nMon:\t\t11AM - 10PM
-      \n\nTues:\t\t11AM - 10PM
-      \n\nWed:\t\t11AM - 10PM
-      \n\nThurs:\t\t11AM - 10PM
-      \n\nFri:\t\t11AM - 11PM
-      \n\nSat:\t\t10:30AM - 11PM;
-      https://www.hulahut.com/locations/austin;
-      3825 Lake Austin Blvd\nAustin, TX 78703</item>
-    <item>Truluck\'s Ocean\'s Seafood &amp; Crab;
-      \nSun:\t\t4:30PM - 9:30PM
-      \n\nMon:\t\t4:30PM - 9:30PM
-      \n\nTues:\t\t4:30PM - 9:30PM
-      \n\nWed:\t\t4:30PM - 9:30PM
-      \n\nThurs:\t\t4:30PM - 9:30PM
-      \n\nFri:\t\t4:30PM - 10PM
-      \n\nSat:\t\t4:30PM - 10PM;
-      https://trulucks.com/locations/downtown-austin-texas;
-      400 Colorado St\nAustin, TX 78701</item>
+    <item>Kerbey Lane Cafe;\nSun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM;https://kerbeylanecafe.com;3704 Kerbey Ln\nAustin, TX 78731</item>
+    <item>Snooze An A.M. Eatery;\nSun:\t\t6:30AM - 2:30PM\n\nMon:\t\t6:30AM - 2:30PM\n\nTues:\t\t6:30AM - 2:30PM\n\nWed:\t\t6:30AM - 2:30PM\n\nThurs:\t\t6:30AM - 2:30PM\n\nFri:\t\t6:30AM - 2:30PM\n\nSat:\t\t6:30AM - 2:30PM;https://www.snoozeeatery.com/branches/1791/snooze-south-lamar;1700 S Lamar Blvd 301\nAustin, TX 78756</item>
+    <item>South Congress Cafe;\nSun:\t\t10AM - 9PM\n\nMon:\t\t11AM - 9PM\n\nTues:\t\t11AM - 9PM\n\nWed:\t\t11AM - 9PM\n\nThurs:\t\t11AM - 9PM\n\nFri:\t\t11AM - 9PM\n\nSat:\t\t10AM - 9PM;http://www.southcongresscafe.com;1600 S Congress Ave\nAustin, TX 78704</item>
+    <item>Perry\'s Steakhouse &amp; Grille;\nSun:\t\t4PM - 9PM\n\nMon:\t\t4PM - 9PM\n\nTues:\t\t4PM - 9PM\n\nWed:\t\t4PM - 9PM\n\nThurs:\t\t4PM - 9PM\n\nFri:\t\t10:30AM - 10PM\n\nSat:\t\t4PM - 10PM;https://perryssteakhouse.com/locations/tx/austin/downtown;114 W 7th St\nAustin, TX 78701</item>
+    <item>Hula Hut;\nSun:\t\t10:30AM - 10PM\n\nMon:\t\t11AM - 10PM\n\nTues:\t\t11AM - 10PM\n\nWed:\t\t11AM - 10PM\n\nThurs:\t\t11AM - 10PM\n\nFri:\t\t11AM - 11PM\n\nSat:\t\t10:30AM - 11PM;https://www.hulahut.com/locations/austin;3825 Lake Austin Blvd\nAustin, TX 78703</item>
+    <item>Truluck\'s Ocean\'s Seafood &amp; Crab;\nSun:\t\t4:30PM - 9:30PM\n\nMon:\t\t4:30PM - 9:30PM\n\nTues:\t\t4:30PM - 9:30PM\n\nWed:\t\t4:30PM - 9:30PM\n\nThurs:\t\t4:30PM - 9:30PM\n\nFri:\t\t4:30PM - 10PM\n\nSat:\t\t4:30PM - 10PM;https://trulucks.com/locations/downtown-austin-texas;400 Colorado St\nAustin, TX 78701</item>
   </string-array>
 </resources>

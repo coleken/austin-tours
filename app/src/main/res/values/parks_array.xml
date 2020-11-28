@@ -6,57 +6,13 @@
 * Each item contains (in this order): Name, Hours, Website, Address
 * Each item uses (\n) and (\t) for formatting.
 * Example item:
-  Name;
-  \nDay1:\t\tXXAM - XXPM
-  \n\nDay2:\t\tXXAM - XXPM
-  \n\nDay3:\t\tXXAM - XXPM
-  \n\nDay4:\t\tXXAM - XXPM
-  \n\nDay5:\t\tXXAM - XXPM
-  \n\nDay6:\t\tXXAM - XXPM
-  \n\nDay7:\t\tXXAM - XXPM;
-  https://www.example.com;
-  123 Example St\nCity, State 12345
+  Name;\nDay1:\t\tXXAM - XXP\n\nDay2:\t\tXXAM - XXP\n\nDay3:\t\tXXAM - XXP\n\nDay4:\t\tXXAM - XXP\n\nDay5:\t\tXXAM - XXP\n\nDay6:\t\tXXAM - XXP\n\nDay7:\t\tXXAM - XXPM;https://www.example.com;123 Example St\nCity, State 12345
 -->
 <resources>
   <string-array name="parksArray">
-    <item>Mount Bonnell;
-      \nSun:\t\t5AM - 10PM
-      \n\nMon:\t\t5AM - 10PM
-      \n\nTues:\t\t5AM - 10PM
-      \n\nWed:\t\t5AM - 10PM
-      \n\nThurs:\t\t5AM - 10PM
-      \n\nFri:\t\t5AM - 10PM
-      \n\nSat:\t\t5AM - 10PM;https://www.austintexas.gov;
-      3800 Mt Bonnell Dr\nAustin, TX 78731</item>
-    <item>Emma Long City Park;
-      \nSun:\t\t7AM - 10PM
-      \n\nMon:\t\t7AM - 10PM
-      \n\nTues:\t\t7AM - 10PM
-      \n\nWed:\t\t7AM - 10PM
-      \n\nThurs:\t\t7AM - 10PM
-      \n\nFri:\t\t7AM - 10PM
-      \n\nSat:\t\t7AM - 10PM;
-      https://austintexas.gov/department/emma-long-metropolitan-park;
-      1600 City Park Rd\nAustin, TX 78730</item>
-    <item>Zilker Park;
-      \nSun:\t\t5AM - 10PM
-      \n\nMon:\t\t5AM - 10PM
-      \n\nTues:\t\t5AM - 10PM
-      \n\nWed:\t\t5AM - 10PM
-      \n\nThurs:\t\t5AM - 10PM
-      \n\nFri:\t\t5AM - 10PM
-      \n\nSat:\t\t5AM - 10PM;
-      http://www.austintexas.gov/department/zilker-metropolitan-park;
-      2100 Barton Springs Rd\nAustin, TX 78746</item>
-    <item>McKinney Falls State Park;
-      \nSun:\t\t10AM - 8PM
-      \n\nMon:\t\t10AM - 8PM
-      \n\nTues:\t\t10AM - 8PM
-      \n\nWed:\t\t10AM - 8PM
-      \n\nThurs:\t\t10AM - 8PM
-      \n\nFri:\t\t10AM - 8PM
-      \n\nSat:\t\t10AM - 8PM;
-      https://tpwd.texas.gov/state-parks/mckinney-falls;
-      5808 McKinney Falls Pkwy\nAustin, TX 78744</item>
+    <item>Mount Bonnell;\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM;https://www.austintexas.gov;3800 Mt Bonnell Dr\nAustin, TX 78731</item>
+    <item>Emma Long City Park;\nSun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM;https://austintexas.gov/department/emma-long-metropolitan-park;1600 City Park Rd\nAustin, TX 78730</item>
+    <item>Zilker Park;\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM;http://www.austintexas.gov/department/zilker-metropolitan-park;2100 Barton Springs Rd\nAustin, TX 78746</item>
+    <item>McKinney Falls State Park;\nSun:\t\t10AM - 8PM\n\nMon:\t\t10AM - 8PM\n\nTues:\t\t10AM - 8PM\n\nWed:\t\t10AM - 8PM\n\nThurs:\t\t10AM - 8PM\n\nFri:\t\t10AM - 8PM\n\nSat:\t\t10AM - 8PM;https://tpwd.texas.gov/state-parks/mckinney-falls;5808 McKinney Falls Pkwy\nAustin, TX 78744</item>
   </string-array>
 </resources>
