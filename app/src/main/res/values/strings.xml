@@ -48,7 +48,7 @@
   <!-- History Strings: Bullock History Museum Name -->
   <string name="bullock_museum_name">Bullock History Museum</string>
   <!-- History Strings: Bullock History Museum Hours -->
-  <string name="bullock_museum_hours">\nSun:\t\t12PM - 6PM\n\nMon:\t\t9AM - 6PM\n\nTues:\t\t9AM - 6PM\n\nWed:\t\t9AM - 6PM\n\nThurs:\t\t9AM - 6PM\n\nFri:\t\t9AM - 6PM\n\nSat:\t\t9AM - 6PM</string>
+  <string name="bullock_museum_hours">\nSun:\t\t10AM - 5PM\n\nMon:\t\t10AM - 5PM\n\nTues:\t\t10AM - 5PM\n\nWed:\t\t10AM - 5PM\n\nThurs:\t\tClosed\n\nFri:\t\tClosed\n\nSat:\t\tClosed</string>
   <!-- History Strings: Bullock History Museum Website -->
   <string name="bullock_museum_site">https://www.thestoryoftexas.com</string>
   <!-- History Strings: Bullock History Museum Address -->
@@ -66,7 +66,7 @@
   <!-- History Strings: Neill-Cochran House Museum Name -->
   <string name="neill_cochran_museum_name">Neill-Cochran House Museum</string>
   <!-- History Strings: Neill-Cochran House Museum Hours -->
-  <string name="neill_cochran_museum_hours">\nSun:\t\t1PM - 4PM\n\nMon:\t\tClosed\n\nTues:\t\tClosed\n\nWed:\t\t1PM - 4PM\n\nThurs:\t\t1PM - 4PM\n\nFri:\t\t1PM - 4PM\n\nSat:\t\t1PM - 4PM</string>
+  <string name="neill_cochran_museum_hours">\nSun:\t\t11AM - 4PM\n\nMon:\t\tClosed\n\nTues:\t\tClosed\n\nWed:\t\t11AM - 4PM\n\nThurs:\t\t11AM - 4PM\n\nFri:\t\t11AM - 4PM\n\nSat:\t\t11AM - 4PM</string>
   <!-- History Strings: Neill-Cochran House Museum Website -->
   <string name="neill_cochran_museum_site">https://nchmuseum.org</string>
   <!-- History Strings: Neill-Cochran House Museum Address -->
@@ -187,7 +187,7 @@
   <!-- Music Strings: ZACH Theater Name -->
   <string name="zach_theater_name">ZACH Theater</string>
   <!-- Music Strings: ZACH Theater Hours -->
-  <string name="zach_theater_hours">\nSun:\t\tClosed\n\nMon:\t\t12PM - 7PM\n\nTues:\t\t12PM - 7PM\n\nWed:\t\t12PM - 7PM\n\nThurs:\t\t12PM - 7PM\n\nFri:\t\t12PM - 7PM\n\nSat:\t\t12PM - 7PM</string>
+  <string name="zach_theater_hours">\nSun:\t\tClosed\n\nMon:\t\tClosed\n\nTues:\t\t12PM - 5PM\n\nWed:\t\t12PM - 5PM\n\nThurs:\t\t12PM - 5PM\n\nFri:\t\t12PM - 5PM\n\nSat:\t\tClosed</string>
   <!-- Music Strings: ZACH Theater Website -->
   <string name="zach_theater_site">https://zachtheatre.org</string>
   <!-- Music Strings: ZACH Theater Address -->
