@@ -155,5 +155,4 @@
     <item name="android:gravity">center</item>
     <item name="colorPrimary">@color/colorLink</item>
   </style>
-
 </resources>
