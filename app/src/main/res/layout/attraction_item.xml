@@ -54,7 +54,7 @@
     <TextView
       android:id="@+id/text_attraction_name"
       style="@style/attractionName"
-      android:text="@string/default_attraction_text"
+      android:text="@string/attraction"
       app:layout_constrainedHeight="true"
       app:layout_constrainedWidth="true"
       app:layout_constraintEnd_toEndOf="parent"

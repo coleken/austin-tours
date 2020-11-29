@@ -2,40 +2,233 @@
 <resources>
   <string name="app_name">Austin Tours</string>
 
-  <!-- Fragment Tab Titles -->
+  <!-- = = = = = = = = = = Fragment Tab Titles = = = = = = = = = = -->
+
+  <!-- History Tab -->
   <string name="tab_1">History</string>
+  <!-- Food Tab -->
   <string name="tab_2">Food</string>
+  <!-- Music Tab -->
   <string name="tab_3">Music</string>
+  <!-- Parks Tab -->
   <string name="tab_4">Parks</string>
 
-  <!-- Default Attraction Text -->
-  <string name="default_attraction_text">Attraction</string>
-
-  <!-- Default Address Text -->
-  <string name="address">123 Default Address Ave City, ST 01234</string>
-
-  <!-- Website Text -->
-  <string name="website">Visit Website</string>
-
-  <!-- Attraction image general content description -->
-  <string name="a_photo_of_the_attraction">A photo of the attraction.</string>
-
-  <!-- Hours of Operation Text -->
-  <string name="hours">Check Availability</string>
-
-  <!-- Hours Icon Content Description -->
-  <string name="a_clock_icon">A clock icon.</string>
-
-  <!-- Location Icon Content Description -->
-  <string name="location_icon">Location Icon</string>
-
-  <!-- Website Icon Content Description -->
-  <string name="a_globe_icon">A globe icon.</string>
+  <!-- = = = = = = = = = = Attraction Adapter Text = = = = = = = = = = -->
 
   <!-- Geo URI Scheme (For map intent) -->
   <string name="geoUri">geo:0,0?q=</string>
 
   <!-- Alert Dialog Button -->
   <string name="alert_button">OK</string>
+
+  <!-- = = = = = = = = = = Attraction TextView Text = = = = = = = = = = -->
+
+  <!-- Default Attraction Text (Replaced by attraction data) -->
+  <string name="attraction">Attraction</string>
+  <!-- Hours of Operation Text (Not replaced by attraction data) -->
+  <string name="hours">Check Availability</string>
+  <!-- Website Text (Not Replaced  -->
+  <string name="website">Visit Website</string>
+  <!-- Default Address Text (Replaced by attraction data) -->
+  <string name="address">123 Default Address Ave City, ST 01234</string>
+
+  <!-- = = = = = = = = = = Image Content Description = = = = = = = = = = -->
+
+  <!-- Attraction image general content description -->
+  <string name="a_photo_of_the_attraction">A photo of the attraction.</string>
+  <!-- Hours Icon Content Description -->
+  <string name="a_clock_icon">A clock icon.</string>
+  <!-- Location Icon Content Description -->
+  <string name="location_icon">Location Icon</string>
+  <!-- Website Icon Content Description -->
+  <string name="a_globe_icon">A globe icon.</string>
+
+  <!-- = = = = = = = = = = Attraction Data: History = = = = = = = = = = -->
+
+  <!-- History Strings: Bullock History Museum Name -->
+  <string name="bullock_museum_name">Bullock History Museum</string>
+  <!-- History Strings: Bullock History Museum Hours -->
+  <string name="bullock_museum_hours">\nSun:\t\t12PM - 6PM\n\nMon:\t\t9AM - 6PM\n\nTues:\t\t9AM - 6PM\n\nWed:\t\t9AM - 6PM\n\nThurs:\t\t9AM - 6PM\n\nFri:\t\t9AM - 6PM\n\nSat:\t\t9AM - 6PM</string>
+  <!-- History Strings: Bullock History Museum Website -->
+  <string name="bullock_museum_site">https://www.thestoryoftexas.com</string>
+  <!-- History Strings: Bullock History Museum Address -->
+  <string name="bullock_museum_address">1800 Congress Ave\nAustin, TX 78701</string>
+
+  <!-- History Strings: LBJ Presidential Library Name -->
+  <string name="lbj_library_name">LBJ Presidential Library</string>
+  <!-- History Strings: LBJ Presidential Library Hours -->
+  <string name="lbj_library_hours">\nSun:\t\t9AM - 5PM\n\nMon:\t\t9AM - 5PM\n\nTues:\t\t9AM - 5PM\n\nWed:\t\t9AM - 5PM\n\nThurs:\t\t9AM - 5PM\n\nFri:\t\t9AM - 5PM\n\nSat:\t\t9AM - 5PM</string>
+  <!-- History Strings: LBJ Presidential Library Website -->
+  <string name="lbj_library_site">http://www.lbjlibrary.org</string>
+  <!-- History Strings: LBJ Presidential Library Address -->
+  <string name="lbj_library_address">2313 Red River St\nAustin, TX 78705</string>
+
+  <!-- History Strings: Neill-Cochran House Museum Name -->
+  <string name="neill_cochran_museum_name">Neill-Cochran House Museum</string>
+  <!-- History Strings: Neill-Cochran House Museum Hours -->
+  <string name="neill_cochran_museum_hours">\nSun:\t\t1PM - 4PM\n\nMon:\t\tClosed\n\nTues:\t\tClosed\n\nWed:\t\t1PM - 4PM\n\nThurs:\t\t1PM - 4PM\n\nFri:\t\t1PM - 4PM\n\nSat:\t\t1PM - 4PM</string>
+  <!-- History Strings: Neill-Cochran House Museum Website -->
+  <string name="neill_cochran_museum_site">https://nchmuseum.org</string>
+  <!-- History Strings: Neill-Cochran House Museum Address -->
+  <string name="neill_cochran_museum_address">2310 San Gabriel St\nAustin, TX 78705</string>
+
+  <!-- History Strings: George Washington Carver Museum Name -->
+  <string name="washington_carver_name">George Washington Carver Museum</string>
+  <!-- History Strings: George Washington Carver Museum Hours -->
+  <string name="washington_carver_hours">\nSun:\t\tClosed\n\nMon:\t\t10AM - 6PM\n\nTues:\t\t10AM - 6PM\n\nWed:\t\t10AM - 6PM\n\nThurs:\t\t10AM - 9PM\n\nFri:\t\t10AM - 6PM\n\nSat:\t\t10AM - 4PM</string>
+  <!-- History Strings: George Washington Carver Museum Website -->
+  <string name="washington_carver_site">http://www.austintexas.gov/department/george-washington-carver-museum-cultural-and-genealogy-center</string>
+  <!-- History Strings: George Washington Carver Museum Address -->
+  <string name="washington_carver_address">1165 Angelina St\nAustin, TX 78702</string>
+
+  <!-- History Strings: Elisabet Ney Museum Name -->
+  <string name="elisabet_ney_name">Elisabet Ney Museum</string>
+  <!-- History Strings: Elisabet Ney Museum Hours -->
+  <string name="elisabet_ney_hours">\nSun:\t\t12PM - 5PM\n\nMon:\t\tClosed\n\nTues:\t\tClosed\n\nWed:\t\t12PM - 5PM\n\nThurs:\t\t12PM - 5PM\n\nFri:\t\t12PM - 5PM\n\nSat:\t\t12PM - 5PM</string>
+  <!-- History Strings: Elisabet Ney Museum Website -->
+  <string name="elisabet_ney_site">http://www.austintexas.gov/department/elisabet-ney-museum</string>
+  <!-- History Strings: Elisabet Ney Museum Address -->
+  <string name="elisabet_ney_address">304 East 44th St\nAustin, TX 78751</string>
+
+  <!-- = = = = = = = = = = Attraction Data: Food = = = = = = = = = = -->
+
+  <!-- Food Strings: Kerbey Lane Cafe Name -->
+  <string name="kerbey_lane_name">Kerbey Lane Cafe</string>
+  <!-- Food Strings: Kerbey Lane Cafe Hours -->
+  <string name="kerbey_lane_hours">\nSun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM</string>
+  <!-- Food Strings: Kerbey Lane Cafe Website -->
+  <string name="kerbey_lane_site">https://kerbeylanecafe.com</string>
+  <!-- Food Strings: Kerbey Lane Cafe Address -->
+  <string name="kerbey_lane_address">3704 Kerbey Ln\nAustin, TX 78731</string>
+
+  <!-- Food Strings: Snooze An A.M. Eatery Name -->
+  <string name="snooze_eatery_name">Snooze An A.M. Eatery</string>
+  <!-- Food Strings: Snooze An A.M. Eatery Hours -->
+  <string name="snooze_eatery_hours">\nSun:\t\t6:30AM - 2:30PM\n\nMon:\t\t6:30AM - 2:30PM\n\nTues:\t\t6:30AM - 2:30PM\n\nWed:\t\t6:30AM - 2:30PM\n\nThurs:\t\t6:30AM - 2:30PM\n\nFri:\t\t6:30AM - 2:30PM\n\nSat:\t\t6:30AM - 2:30PM</string>
+  <!-- Food Strings: Snooze An A.M. Eatery Website -->
+  <string name="snooze_eatery_site">https://www.snoozeeatery.com/branches/1791/snooze-south-lamar</string>
+  <!-- Food Strings: Snooze An A.M. Eatery Address -->
+  <string name="snooze_eatery_address">1700 S Lamar Blvd 301\nAustin, TX 78756</string>
+
+  <!-- Food Strings: South Congress Cafe Name -->
+  <string name="south_congress_name">South Congress Cafe</string>
+  <!-- Food Strings: South Congress Cafe Hours -->
+  <string name="south_congress_hours">\nSun:\t\t10AM - 9PM\n\nMon:\t\t11AM - 9PM\n\nTues:\t\t11AM - 9PM\n\nWed:\t\t11AM - 9PM\n\nThurs:\t\t11AM - 9PM\n\nFri:\t\t11AM - 9PM\n\nSat:\t\t10AM - 9PM</string>
+  <!-- Food Strings: South Congress Cafe Website -->
+  <string name="south_congress_site">http://www.southcongresscafe.com</string>
+  <!-- Food Strings: South Congress Cafe Address -->
+  <string name="south_congress_address">1600 S Congress Ave\nAustin, TX 78704</string>
+
+  <!-- Food Strings: Perry's Steakhouse & Grille Name -->
+  <string name="perrys_grille_name">Perry\'s Steakhouse &amp; Grille</string>
+  <!-- Food Strings: Perry's Steakhouse & Grille Name Hours -->
+  <string name="perrys_grille_hours">\nSun:\t\t4PM - 9PM\n\nMon:\t\t4PM - 9PM\n\nTues:\t\t4PM - 9PM\n\nWed:\t\t4PM - 9PM\n\nThurs:\t\t4PM - 9PM\n\nFri:\t\t10:30AM - 10PM\n\nSat:\t\t4PM - 10PM</string>
+  <!-- Food Strings: Perry's Steakhouse & Grille Name Website -->
+  <string name="perrys_grille_site">https://perryssteakhouse.com/locations/tx/austin/downtown</string>
+  <!-- Food Strings: Perry's Steakhouse & Grille Name Address -->
+  <string name="perrys_grille_address">114 W 7th St\nAustin, TX 78701</string>
+
+  <!-- Food Strings: Hula Hut Name -->
+  <string name="hula_hut_name">Hula Hut</string>
+  <!-- Food Strings: Hula Hut Hours -->
+  <string name="hula_hut_hours">\nSun:\t\t10:30AM - 10PM\n\nMon:\t\t11AM - 10PM\n\nTues:\t\t11AM - 10PM\n\nWed:\t\t11AM - 10PM\n\nThurs:\t\t11AM - 10PM\n\nFri:\t\t11AM - 11PM\n\nSat:\t\t10:30AM - 11PM</string>
+  <!-- Food Strings: Hula Hut Website -->
+  <string name="hula_hut_site">https://www.hulahut.com/locations/austin</string>
+  <!-- Food Strings: Hula Hut Address -->
+  <string name="hula_hut_address">3825 Lake Austin Blvd\nAustin, TX 78703</string>
+
+  <!-- Food Strings: Truluck's Ocean's Seafood & Crab Name -->
+  <string name="trulucks_seafood_name">Truluck\'s Ocean\'s Seafood &amp; Crab</string>
+  <!-- Food Strings:  Truluck's Ocean's Seafood & CrabHours -->
+  <string name="trulucks_seafood_hours">\nSun:\t\t4:30PM - 9:30PM\n\nMon:\t\t4:30PM - 9:30PM\n\nTues:\t\t4:30PM - 9:30PM\n\nWed:\t\t4:30PM - 9:30PM\n\nThurs:\t\t4:30PM - 9:30PM\n\nFri:\t\t4:30PM - 10PM\n\nSat:\t\t4:30PM - 10PM</string>
+  <!-- Food Strings: Truluck's Ocean's Seafood & Crab Website -->
+  <string name="trulucks_seafood_site">https://trulucks.com/locations/downtown-austin-texas</string>
+  <!-- Food Strings: Truluck's Ocean's Seafood & Crab Address -->
+  <string name="trulucks_seafood_address">400 Colorado St\nAustin, TX 78701</string>
+
+  <!-- = = = = = = = = = = Attraction Data: Music = = = = = = = = = = -->
+
+  <!-- Music Strings: Austin City Limits Name -->
+  <string name="austin_city_limits_name">Austin City Limits</string>
+  <!-- Music Strings: Austin City Limits Hours -->
+  <string name="austin_city_limits_hours">\nSun:\t\tClosed\n\nMon:\t\t8AM - 6PM\n\nTues:\t\t8AM - 6PM\n\nWed:\t\t8AM - 6PM\n\nThurs:\t\t8AM - 12AM\n\nFri:\t\t8AM - 12AM\n\nSat:\t\t11AM - 12AM</string>
+  <!-- Music Strings: Austin City Limits Website -->
+  <string name="austin_city_limits_site">https://acl-live.com</string>
+  <!-- Music Strings: Austin City Limits Address -->
+  <string name="austin_city_limits_address">310 W Willie Nelson Blvd\nAustin, TX 78701</string>
+
+  <!-- Music Strings: Hole in the Wall Name -->
+  <string name="hole_in_wall_name">Hole in the Wall</string>
+  <!-- Music Strings: Hole in the Wall Hours -->
+  <string name="hole_in_wall_hours">\nSun:\t\t3PM - 2AM\n\nMon:\t\t3PM - 2AM\n\nTues:\t\t3PM - 2AM\n\nWed:\t\t3PM - 2AM\n\nThurs:\t\t3PM - 2AM\n\nFri:\t\t3PM - 2AM\n\nSat:\t\t3PM - 2AM</string>
+  <!-- Music Strings: Hole in the Wall Website -->
+  <string name="hole_in_wall_site">https://www.holeinthewallaustin.com</string>
+  <!-- Music Strings: Hole in the Wall Address -->
+  <string name="hole_in_wall_address">2538 Guadalupe St\nAustin, TX 78705</string>
+
+  <!-- Music Strings: Skylark Lounge Name -->
+  <string name="skylark_lounge_name">Skylark Lounge</string>
+  <!-- Music Strings: Skylark Lounge Hours -->
+  <string name="skylark_lounge_hours">\nSun:\t\t5PM - 12AM\n\nMon:\t\t5PM - 12AM\n\nTues:\t\t5PM - 12AM\n\nWed:\t\t5PM - 12AM\n\nThurs:\t\t5PM - 12AM\n\nFri:\t\t5PM - 1AM\n\nSat:\t\t5PM - 1AM</string>
+  <!-- Music Strings: Skylark Lounge Website -->
+  <string name="skylark_lounge_site">http://skylarkaustin.com</string>
+  <!-- Music Strings: Skylark Lounge Address -->
+  <string name="skylark_lounge_address">2039 Airport Blvd\nAustin, TX 78722</string>
+
+  <!-- Music Strings: South by Southwest (SXSW) Festival Name -->
+  <string name="sxsw_name">South by Southwest Festival</string>
+  <!-- Music Strings: South by Southwest Festival Hours -->
+  <string name="sxsw_hours">\nPlease Note:\n\nThis is an annual event and its dates are subject to change.\n\nCheck the website for details!</string>
+  <!-- Music Strings: South by Southwest Festival Website -->
+  <string name="sxsw_site">https://www.sxsw.com</string>
+  <!-- Music Strings: South by Southwest Festival Address -->
+  <string name="sxsw_address">1400 Lavaca St\nAustin, TX 78701</string>
+
+  <!-- Music Strings: ZACH Theater Name -->
+  <string name="zach_theater_name">ZACH Theater</string>
+  <!-- Music Strings: ZACH Theater Hours -->
+  <string name="zach_theater_hours">\nSun:\t\tClosed\n\nMon:\t\t12PM - 7PM\n\nTues:\t\t12PM - 7PM\n\nWed:\t\t12PM - 7PM\n\nThurs:\t\t12PM - 7PM\n\nFri:\t\t12PM - 7PM\n\nSat:\t\t12PM - 7PM</string>
+  <!-- Music Strings: ZACH Theater Website -->
+  <string name="zach_theater_site">https://zachtheatre.org</string>
+  <!-- Music Strings: ZACH Theater Address -->
+  <string name="zach_theater_address">202 S Lamar Blvd\nAustin, TX 78704</string>
+
+  <!-- = = = = = = = = = = Attraction Data: Parks = = = = = = = = = = -->
+
+  <!-- Parks Strings: Mount Bonnell Name -->
+  <string name="mount_bonnell_name">Mount Bonnell</string>
+  <!-- Parks Strings: Mount Bonnell Hours -->
+  <string name="mount_bonnell_hours">\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM</string>
+  <!-- Parks Strings: Mount Bonnell Website -->
+  <string name="mount_bonnell_site">https://www.austintexas.gov</string>
+  <!-- Parks Strings: Mount Bonnell Address -->
+  <string name="mount_bonnell_address">3800 Mt Bonnell Dr\nAustin, TX 78731</string>
+
+  <!-- Parks Strings: Emma Long Park Name -->
+  <string name="emma_long_park_name">Emma Long City Park</string>
+  <!-- Parks Strings: Emma Long Park Hours -->
+  <string name="emma_long_park_hours">\nSun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM</string>
+  <!-- Parks Strings: Emma Long Park Website -->
+  <string name="emma_long_park_site">https://austintexas.gov/department/emma-long-metropolitan-park</string>
+  <!-- Parks Strings: Emma Long Park Address -->
+  <string name="emma_long_park_address">1600 City Park Rd\nAustin, TX 78730</string>
+
+  <!-- Parks Strings: Zilker Park Name -->
+  <string name="zilker_park_name">Zilker Park</string>
+  <!-- Parks Strings: Zilker Park Hours -->
+  <string name="zilker_park_hours">\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM</string>
+  <!-- Parks Strings: Zilker Park Website -->
+  <string name="zilker_park_site">http://www.austintexas.gov/department/zilker-metropolitan-park</string>
+  <!-- Parks Strings: Zilker Park Address -->
+  <string name="zilker_park_address">2100 Barton Springs Rd\nAustin, TX 78746</string>
+
+  <!-- Parks Strings: McKinney Falls Park Name -->
+  <string name="mckinney_falls_name">McKinney Falls State Park</string>
+  <!-- Parks Strings: Mckinney Falls Park Hours -->
+  <string name="mckinney_falls_hours">\nSun:\t\t10AM - 8PM\n\nMon:\t\t10AM - 8PM\n\nTues:\t\t10AM - 8PM\n\nWed:\t\t10AM - 8PM\n\nThurs:\t\t10AM - 8PM\n\nFri:\t\t10AM - 8PM\n\nSat:\t\t10AM - 8PM</string>
+  <!-- Parks Strings: Mckinney Falls Park Website -->
+  <string name="mckinney_falls_site">https://tpwd.texas.gov/state-parks/mckinney-falls</string>
+  <!-- Parks Strings: Mckinney FallsPark Address -->
+  <string name="mckinney_falls_address">5808 McKinney Falls Pkwy\nAustin, TX 78744</string>
 
 </resources>

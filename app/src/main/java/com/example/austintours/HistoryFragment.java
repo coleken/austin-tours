@@ -1,5 +1,6 @@
 package com.example.austintours;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,18 +48,12 @@ public class HistoryFragment extends Fragment {
    * @param binding An instance of HistoryFragmentBinding.
    */
   private void displayAttractionList(FragmentHistoryBinding binding) {
-    String[] searchList = getResources().getStringArray(R.array.historyArray);
+    String[][] historyArray = getHistoryArray();
     ArrayList<Attraction> attractions = new ArrayList<>();
-    int[] photos = attractionPhotos();
-    final String splitBy = ";";
+    TypedArray photos = getAttractionPhotos();
     int counter = 0;
-    for (String str : searchList) {
-      String[] attraction = str.split(splitBy);
-      String name = attraction[0];
-      String hours = attraction[1];
-      String website = attraction[2];
-      String address = attraction[3];
-      attractions.add(new Attraction(name, hours, website, address, photos[counter]));
+    for (String[] str : historyArray) {
+      attractions.add(new Attraction(str[0], str[1], str[2], str[3], photos.getDrawable(counter)));
       counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;
@@ -68,46 +63,24 @@ public class HistoryFragment extends Fragment {
   }
 
   /**
-   * Returns an int array of image resource identifiers for the custom attraction object.
+   * Returns an array of string arrays that contain attraction information.
    *
-   * @return An int array of image resource identifiers.
+   * @return An array of string arrays
    */
-  private int[] attractionPhotos() {
-    return new int[]{R.drawable.bullock_museum, R.drawable.lbj_library,
-        R.drawable.neill_cochran_museum, R.drawable.washington_carver_museum,
-        R.drawable.elisabet_ney_museum};
-    /*
-     * Attraction Photo Image Sources
-     *
-     * File Name: bullock_museum.png
-     * Original Name: bullock-texas-state-history.jpg
-     * Artist/Owner: r678
-     * File URL: https://media-cdn.tripadvisor.com/media/photo-o/08/89/64/e5/bullock-texas-state-history.jpg
-     * Date Retrieved: Friday, November 20th, 2020
-     *
-     * File Name: lbj_library.png
-     * Original Name: lbj-presdiential-library.jpg
-     * Artist/Owner: Jay Godwin
-     * File URL: https://media-cdn.tripadvisor.com/media/photo-o/0a/aa/6e/8a/lbj-presidential-library.jpg
-     * Date Retrieved: Friday, November 20th, 2020
-     *
-     * File Name: neil_cochran_museum.png
-     * Original Name: the-neill-cochran-museum.jpg
-     * Artist/Owner: Rolf A.
-     * File URL: https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/86/f6/the-neill-cochran-museum.jpg?w=1100&h=-1&s=1
-     * Date Retrieved: Friday, November 20th, 2020
-     *
-     * File Name: washington_carver_museum.png
-     * Original Name: photo0jpg.jpg
-     * Artist/Owner: Clayton O.
-     * File URL: https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/29/98/69/photo0jpg.jpg?w=1100&h=700&s=1
-     * Date Retrieved: Friday, November 20th, 2020
-     *
-     * File Name: elisabet_ney_museum.png
-     * Original Name: 011-59ae5420b2f0df7_59ae552f-dcbf-c79b-649acd5263c3f9ca.jpg
-     * Artist/Owner: austintexas.org
-     * File URL: https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/011-59ae5420b2f0df7_59ae552f-dcbf-c79b-649acd5263c3f9ca.jpg
-     * Date Retrieved: Monday, November 23rd, 2020
-     */
+  private String[][] getHistoryArray() {
+    return new String[][]{getResources().getStringArray(R.array.bullock_museum),
+        getResources().getStringArray(R.array.lbj_library),
+        getResources().getStringArray(R.array.neill_cochran_museum),
+        getResources().getStringArray(R.array.washington_carver_museum),
+        getResources().getStringArray(R.array.elisabet_ney_museum)};
+  }
+
+  /**
+   * Returns a typed array of images for the custom attraction objects.
+   *
+   * @return A typed array of images.
+   */
+  private TypedArray getAttractionPhotos() {
+    return getResources().obtainTypedArray(R.array.history_photos);
   }
 }

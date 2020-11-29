@@ -1,20 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-* Austin Tours String Array Format:
-* Each item contains attributes for a single attraction.
-* Each attribute is separated using a semicolon (;) as a delimiter.
-* Each item contains (in this order): Name, Hours, Website, Address
-* Each item uses (\n) and (\t) for formatting.
-* Example item:
-  Name;\nDay1:\t\tXXAM - XXPM\n\nDay2:\t\tXXAM - XXPM\n\nDay3:\t\tXXAM - XXPM\n\nDay4:\t\tXXAM - XXPM\n\nDay5:\t\tXXAM - XXPM\n\nDay6:\t\tXXAM - XXPM\n\nDay7:\t\tXXAM - XXPM;https://www.example.com;123 Example St\nCity, State 12345
--->
+<?xml version="1.0" encoding="utf-8"?><!-- Attractions: Food Arrays -->
 <resources>
-  <string-array name="foodArray">
-    <item>Kerbey Lane Cafe;\nSun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM;https://kerbeylanecafe.com;3704 Kerbey Ln\nAustin, TX 78731</item>
-    <item>Snooze An A.M. Eatery;\nSun:\t\t6:30AM - 2:30PM\n\nMon:\t\t6:30AM - 2:30PM\n\nTues:\t\t6:30AM - 2:30PM\n\nWed:\t\t6:30AM - 2:30PM\n\nThurs:\t\t6:30AM - 2:30PM\n\nFri:\t\t6:30AM - 2:30PM\n\nSat:\t\t6:30AM - 2:30PM;https://www.snoozeeatery.com/branches/1791/snooze-south-lamar;1700 S Lamar Blvd 301\nAustin, TX 78756</item>
-    <item>South Congress Cafe;\nSun:\t\t10AM - 9PM\n\nMon:\t\t11AM - 9PM\n\nTues:\t\t11AM - 9PM\n\nWed:\t\t11AM - 9PM\n\nThurs:\t\t11AM - 9PM\n\nFri:\t\t11AM - 9PM\n\nSat:\t\t10AM - 9PM;http://www.southcongresscafe.com;1600 S Congress Ave\nAustin, TX 78704</item>
-    <item>Perry\'s Steakhouse &amp; Grille;\nSun:\t\t4PM - 9PM\n\nMon:\t\t4PM - 9PM\n\nTues:\t\t4PM - 9PM\n\nWed:\t\t4PM - 9PM\n\nThurs:\t\t4PM - 9PM\n\nFri:\t\t10:30AM - 10PM\n\nSat:\t\t4PM - 10PM;https://perryssteakhouse.com/locations/tx/austin/downtown;114 W 7th St\nAustin, TX 78701</item>
-    <item>Hula Hut;\nSun:\t\t10:30AM - 10PM\n\nMon:\t\t11AM - 10PM\n\nTues:\t\t11AM - 10PM\n\nWed:\t\t11AM - 10PM\n\nThurs:\t\t11AM - 10PM\n\nFri:\t\t11AM - 11PM\n\nSat:\t\t10:30AM - 11PM;https://www.hulahut.com/locations/austin;3825 Lake Austin Blvd\nAustin, TX 78703</item>
-    <item>Truluck\'s Ocean\'s Seafood &amp; Crab;\nSun:\t\t4:30PM - 9:30PM\n\nMon:\t\t4:30PM - 9:30PM\n\nTues:\t\t4:30PM - 9:30PM\n\nWed:\t\t4:30PM - 9:30PM\n\nThurs:\t\t4:30PM - 9:30PM\n\nFri:\t\t4:30PM - 10PM\n\nSat:\t\t4:30PM - 10PM;https://trulucks.com/locations/downtown-austin-texas;400 Colorado St\nAustin, TX 78701</item>
+  <!-- Food Attraction Photos -->
+  <array name="food_photos">
+    <!-- Kerbey Lane Cafe Photo -->
+    <item>@drawable/kerbey_lane</item>
+    <!--
+      File Name: kerbey_lane.png
+      Original Name: kerbey-700x560.jpg
+      Artist/Owner: Kerbey Lane Cafe
+      File URL: https://img-aws.ehowcdn.com/700x/cdn.onlyinyourstate.com/wp-content/uploads/2018/02/kerbey-700x560.jpg
+      Date Retrieved: Wednesday, November 18th, 2020
+    -->
+    <!-- Snooze, an A.M. Eatery Photo -->
+    <item>@drawable/snooze_an_am</item>
+    <!--
+      File Name: snooze_an_am.png
+      Original Name: IMG_7938.0.0.webp
+      Artist/Owner: Nadia Chaudhury/EATX
+      File URL: https://cdn.vox-cdn.com/thumbor/qifAaTwmeo0avUP5lKUmssI2jn8=/73x0:2749x2007/1820x1213/filters:focal(73x0:2749x2007):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/49662569/IMG_7938.0.0.JPG
+      Date Retrieved: Wednesday, November 18th, 2020
+    -->
+    <!-- South Congress Cafe Photo -->
+    <item>@drawable/south_congress_cafe</item>
+    <!--
+      File Name: south_congress_cafe.png
+      Original Name: Building-Front-South-Congress-Cafe.jpg
+      Artist/Owner: South Congress Cafe
+      File URL: https://i1.wp.com/www.southcongresscafe.com/wp-content/uploads/2018/05/Building-Front-South-Congress-Cafe.jpg
+      Date Retrieved: Wednesday, November 18th, 2020
+    -->
+    <!-- Perry's Steakhouse & Grille Photo -->
+    <item>@drawable/perrys_steakhouse</item>
+    <!--
+      File Name: perrys_steakhouse.png
+      Original Name: PERRS-Austin-Downtown-Exterior.jpg
+      Artist/Owner: Perry's Steakhouse & Grille
+      File URL: https://perryssteakhouse.com/wp-content/uploads/2018/05/PERRS-Austin-Downtown-Exterior.jpg
+      Date Retrieved: Wednesday, November 18th, 2020
+    -->
+    <!-- Hula Hut Photo -->
+    <item>@drawable/hula_hut</item>
+    <!--
+      File Name: hula_hut.png
+      Original Name: g6.jpg
+      Artist/Owner: Ivan Collins
+      File URL: https://www.videocityguide.com/austin/PCWUploads/Hula%20Hut%20on%20Lake%20Austin/g6.jpg
+      Date Retrieved: Wednesday, November 18th, 2020
+    -->
+    <!-- Truluck's Ocean's Seafood & Crab Photo -->
+    <item>@drawable/trulucks_seafood</item>
+    <!--
+      File Name: trulucks_seafood.png
+      Original Name: TLKS_Exteriors_AUSDT_DC20.png
+      Artist/Owner: Truluck's Ocean's Finest Seafood & Crab
+      File URL:https://trulucks.com/wp-content/uploads/2019/10/TLKS_Exteriors_AUSDT_DC20.png
+      Date Retrieved: Wednesday, November 18th, 2020
+    -->
+  </array>
+  <!-- Attraction Array-->
+  <string-array name="kerbey_lane_cafe">
+    <!-- Attraction Name -->
+    <item>@string/kerbey_lane_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/kerbey_lane_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/kerbey_lane_site</item>
+    <!-- Attraction Address -->
+    <item>@string/kerbey_lane_address</item>
+  </string-array>
+  <!-- Attraction Array -->
+  <string-array name="snooze_eatery">
+    <!-- Attraction Name -->
+    <item>@string/snooze_eatery_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/snooze_eatery_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/snooze_eatery_site</item>
+    <!-- Attraction Website -->
+    <item>@string/snooze_eatery_address</item>
+  </string-array>
+  <!-- Attraction Array -->
+  <string-array name="south_congress_cafe">
+    <!-- Attraction Name -->
+    <item>@string/south_congress_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/south_congress_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/south_congress_site</item>
+    <!-- Attraction Address -->
+    <item>@string/south_congress_address</item>
+  </string-array>
+  <!-- Attraction Array -->
+  <string-array name="perrys_grille">
+    <!-- Attraction Name -->
+    <item>@string/perrys_grille_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/perrys_grille_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/perrys_grille_site</item>
+    <!-- Attraction Website -->
+    <item>@string/perrys_grille_address</item>
+  </string-array>
+  <!-- Attraction Array -->
+  <string-array name="hula_hut">
+    <!-- Attraction Name -->
+    <item>@string/hula_hut_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/hula_hut_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/hula_hut_site</item>
+    <!-- Attraction Address -->
+    <item>@string/hula_hut_address</item>
+  </string-array>
+  <!-- Attraction Array -->
+  <string-array name="trulucks_seafood">
+    <!-- Attraction Name -->
+    <item>@string/trulucks_seafood_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/trulucks_seafood_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/trulucks_seafood_site</item>
+    <!-- Attraction Address -->
+    <item>@string/trulucks_seafood_address</item>
   </string-array>
 </resources>

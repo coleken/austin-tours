@@ -1,19 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-* Austin Tours String Array Format:
-* Each item contains attributes for a single attraction.
-* Each attribute is separated using a semicolon (;) as a delimiter.
-* Each item contains (in this order): Name, Hours, Website, Address
-* Each item uses (\n) and (\t) for formatting.
-* Example item:
-  Name;\nDay1:\t\tXXAM - XXPM\n\nDay2:\t\tXXAM - XXPM\n\nDay3:\t\tXXAM - XXPM\n\nDay4:\t\tXXAM - XXPM\n\nDay5:\t\tXXAM - XXPM\n\nDay6:\t\tXXAM - XXPM\n\nDay7:\t\tXXAM - XXPM;https://www.example.com;123 Example St\nCity, State 12345
--->
+<?xml version="1.0" encoding="utf-8"?><!-- Attractions: Music Arrays -->
 <resources>
-  <string-array name="musicArray">
-    <item>Austin City Limits;\nSun:\t\tClosed\n\nMon:\t\t8AM - 6PM\n\nTues:\t\t8AM - 6PM\n\nWed:\t\t8AM - 6PM\n\nThurs:\t\t8AM - 12AM\n\nFri:\t\t8AM - 12AM\n\nSat:\t\t11AM - 12AM;https://acl-live.com;310 W Willie Nelson Blvd\nAustin, TX 78701</item>
-    <item>Hole in the Wall;\nSun:\t\t3PM - 2AM\n\nMon:\t\t3PM - 2AM\n\nTues:\t\t3PM - 2AM\n\nWed:\t\t3PM - 2AM\n\nThurs:\t\t3PM - 2AM\n\nFri:\t\t3PM - 2AM\n\nSat:\t\t3PM - 2AM;https://www.holeinthewallaustin.com;2538 Guadalupe St\nAustin, TX 78705</item>
-    <item>Skylark Lounge;\nSun:\t\t5PM - 12AM\n\nMon:\t\t5PM - 12AM\n\nTues:\t\t5PM - 12AM\n\nWed:\t\t5PM - 12AM\n\nThurs:\t\t5PM - 12AM\n\nFri:\t\t5PM - 1AM\n\nSat:\t\t5PM - 1AM;http://skylarkaustin.com;2039 Airport Blvd\nAustin, TX 78722</item>
-    <item>South by Southwest Festival;\nPlease Note:\n\nThis is an annual event and its dates are subject to change.\n\nCheck the website for details!;https://www.sxsw.com;1400 Lavaca St\nAustin, TX 78701</item>
-    <item>ZACH Theater;\nSun:\t\tClosed\n\nMon:\t\t12PM - 7PM\n\nTues:\t\t12PM - 7PM\n\nWed:\t\t12PM - 7PM\n\nThurs:\t\t12PM - 7PM\n\nFri:\t\t12PM - 7PM\n\nSat:\t\t12PM - 7PM;https://zachtheatre.org;202 S Lamar Blvd\nAustin, TX 78704</item>
+  <!-- Music Attraction Photos -->
+  <array name="music_photos">
+    <!-- Austin City Limits Photo -->
+    <item>@drawable/austin_city_limits</item>
+    <!--
+      File Name: austin_city_limits.png
+      Original Name: exterior-smaller.jpg
+      Artist/Owner: SMITH-CLEMENTI
+      File URL: https://acl-live.com/wp-content/uploads/2018/10/exterior-smaller.jpg
+      Date Retrieved: Thursday, November 19th, 2020
+    -->
+    <!-- Hole in the Wall Photo -->
+    <item>@drawable/hole_in_the_wall</item>
+    <!--
+      File Name: hole_in_the_wall.png
+      Original Name: o.jpg
+      Artist/Owner: Barret L.
+      File URL: https://s3-media0.fl.yelpcdn.com/bphoto/qvAcVqYGUp2Fw62MJdebPw/o.jpg
+      Date Retrieved: Thursday, November 19th, 2020
+    -->
+    <!-- Skylark Lounge Photo -->
+    <item>@drawable/skylark_lounge</item>
+    <!--
+      File Name: skylark_lounge.png
+      Original Name: o.jpg
+      Artist/Owner: Jennifer Y.
+      File URL: https://s3-media0.fl.yelpcdn.com/bphoto/HBH60wlItRmXwsqG1Zum8g/o.jpg
+      Date Retrieved: Thursday, November 19th, 2020
+    -->
+    <!-- South by Southwest Center Photo -->
+    <item>@drawable/sxsw_center</item>
+    <!--
+      File Name: sxsw_center.png
+      Original Name: 1__18_of_19_.0.jpg
+      Artist/Owner: SXSW
+      File URL: https://cdn.vox-cdn.com/uploads/chorus_image/image/64823298/1__18_of_19_.0.jpg
+      Date Retrieved: Thursday, November 26th, 2020
+    -->
+    <!-- Zach Theater Photo -->
+    <item>@drawable/zach_theater</item>
+    <!--
+      File Name: zach_theater.png
+      Original Name: ZACH-Topfer-1170_Exterior.jpg
+      Artist/Owner: zactheater.org
+      File URL: https://zachtheatre.org/wp-content/uploads/2019/10/ZACH-Topfer-1170_Exterior.jpg
+      Date Retrieved: Monday, November 23rd, 2020
+    -->
+  </array>
+  <!-- Austin City Limits Array-->
+  <string-array name="austin_city_limits">
+    <!-- Attraction Name -->
+    <item>@string/austin_city_limits_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/austin_city_limits_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/austin_city_limits_site</item>
+    <!-- Attraction Address -->
+    <item>@string/austin_city_limits_address</item>
+  </string-array>
+  <!-- Hole in the Wall Array -->
+  <string-array name="hole_in_wall">
+    <!-- Attraction Name -->
+    <item>@string/hole_in_wall_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/hole_in_wall_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/hole_in_wall_site</item>
+    <!-- Attraction Website -->
+    <item>@string/hole_in_wall_address</item>
+  </string-array>
+  <!-- Skylark Lounge Array -->
+  <string-array name="skylark_lounge">
+    <!-- Attraction Name -->
+    <item>@string/skylark_lounge_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/skylark_lounge_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/skylark_lounge_site</item>
+    <!-- Attraction Address -->
+    <item>@string/skylark_lounge_address</item>
+  </string-array>
+  <!-- South by Southwest (SXSW)  Array -->
+  <string-array name="south_by_southwest">
+    <!-- Attraction Name -->
+    <item>@string/sxsw_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/sxsw_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/sxsw_site</item>
+    <!-- Attraction Website -->
+    <item>@string/sxsw_address</item>
+  </string-array>
+  <!-- Zach Theater Array -->
+  <string-array name="zach_theater">
+    <!-- Attraction Name -->
+    <item>@string/zach_theater_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/zach_theater_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/zach_theater_site</item>
+    <!-- Attraction Address -->
+    <item>@string/zach_theater_address</item>
   </string-array>
 </resources>

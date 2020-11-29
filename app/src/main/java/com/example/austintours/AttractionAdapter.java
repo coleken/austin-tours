@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
@@ -66,7 +65,7 @@ public class AttractionAdapter extends
     // Displays the hours of operation in a toast message
     holder.hours
         .setOnClickListener(view -> showHoursAlert(attraction.getName(), attraction.getHours()));
-    holder.photo.setImageDrawable(ContextCompat.getDrawable(CONTEXT, attraction.getPhoto()));
+    holder.photo.setImageDrawable(attraction.getPhoto());
   }
 
   /**

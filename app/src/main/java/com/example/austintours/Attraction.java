@@ -1,5 +1,7 @@
 package com.example.austintours;
 
+import android.graphics.drawable.Drawable;
+
 /**
  * A custom class that contains attraction location information.
  */
@@ -9,7 +11,7 @@ public class Attraction {
   private String hours;
   private String address;
   private String website;
-  private int photo;
+  private Drawable photo;
 
   /**
    * Default attraction constructor.
@@ -25,11 +27,11 @@ public class Attraction {
    * @param hours   A string for the hours of operation
    * @param address A string for the address.
    * @param website A string for the website.
-   * @param photo   An int for the id of the attraction photo.
+   * @param photo   A drawable of the attraction photo.
    */
-  public Attraction(String name, String hours, String website, String address, int photo) {
-    this.hours = hours;
+  public Attraction(String name, String hours, String website, String address, Drawable photo) {
     this.name = name;
+    this.hours = hours;
     this.address = address;
     this.website = website;
     this.photo = photo;
@@ -72,11 +74,11 @@ public class Attraction {
   }
 
   /**
-   * Returns an int containing the resource identifier of the attraction photo.
+   * Returns a drawable of the attraction photo.
    *
-   * @return An int with the resource identifier of the attraction photo.
+   * @return A drawable of the attraction photo.
    */
-  public int getPhoto() {
+  public Drawable getPhoto() {
     return photo;
   }
 }

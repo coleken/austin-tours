@@ -1,19 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-* Austin Tours String Array Format:
-* Each item contains attributes for a single attraction.
-* Each attribute is separated using a semicolon (;) as a delimiter.
-* Each item contains (in this order): Name, Hours, Website, Address
-* Each item uses (\n) and (\t) for formatting.
-* Example item:
-  Name;\nDay1:\t\tXXAM - XXPM\n\nDay2:\t\tXXAM - XXPM\n\nDay3:\t\tXXAM - XXPM\n\nDay4:\t\tXXAM - XXPM\n\nDay5:\t\tXXAM - XXPM\n\nDay6:\t\tXXAM - XXPM\n\nDay7:\t\tXXAM - XXPM;https://www.example.com;123 Example St\nCity, State 12345
--->
+<!-- Attractions: History Arrays -->
 <resources>
-  <string-array name="historyArray">
-    <item>Bullock History Museum;\nSun:\t\t12PM - 6PM\n\nMon:\t\t9AM - 6PM\n\nTues:\t\t9AM - 6PM\n\nWed:\t\t9AM - 6PM\n\nThurs:\t\t9AM - 6PM\n\nFri:\t\t9AM - 6PM\n\nSat:\t\t9AM - 6PM;https://www.thestoryoftexas.com;1800 Congress Ave\nAustin, TX 78701</item>
-    <item>LBJ Presidential Library;\nSun:\t\t9AM - 5PM\n\nMon:\t\t9AM - 5PM\n\nTues:\t\t9AM - 5PM\n\nWed:\t\t9AM - 5PM\n\nThurs:\t\t9AM - 5PM\n\nFri:\t\t9AM - 5PM\n\nSat:\t\t9AM - 5PM;http://www.lbjlibrary.org;2313 Red River St\nAustin, TX 78705</item>
-    <item>Neill-Cochran House Museum;\nSun:\t\t1PM - 4PM\n\nMon:\t\tClosed\n\nTues:\t\tClosed\n\nWed:\t\t1PM - 4PM\n\nThurs:\t\t1PM - 4PM\n\nFri:\t\t1PM - 4PM\n\nSat:\t\t1PM - 4PM;https://nchmuseum.org;2310 San Gabriel St\nAustin, TX 78705</item>
-    <item>George Washington Carver Museum;\nSun:\t\tClosed\n\nMon:\t\t10AM - 6PM\n\nTues:\t\t10AM - 6PM\n\nWed:\t\t10AM - 6PM\n\nThurs:\t\t10AM - 9PM\n\nFri:\t\t10AM - 6PM\n\nSat:\t\t10AM - 4PM;http://www.austintexas.gov/department/george-washington-carver-museum-cultural-and-genealogy-center;1165 Angelina St\nAustin, TX 78702</item>
-    <item>Elisabet Ney Museum;\nSun:\t\t12PM - 5PM\n\nMon:\t\tClosed\n\nTues:\t\tClosed\n\nWed:\t\t12PM - 5PM\n\nThurs:\t\t12PM - 5PM\n\nFri:\t\t12PM - 5PM\n\nSat:\t\t12PM - 5PM;http://www.austintexas.gov/department/elisabet-ney-museum;304 East 44th St\nAustin, TX 78751</item>
+  <!-- History Attraction Photos -->
+  <array name="history_photos">
+    <!-- Bullock Museum Photo -->
+    <item>@drawable/bullock_museum</item>
+    <!--
+      File Name: bullock_museum.png
+      Original Name: bullock-texas-state-history.jpg
+      Artist/Owner: r678
+      File URL: https://media-cdn.tripadvisor.com/media/photo-o/08/89/64/e5/bullock-texas-state-history.jpg
+      Date Retrieved: Friday, November 20th, 2020
+    -->
+    <!-- LBJ Presidential Library Photo -->
+    <item>@drawable/lbj_library</item>
+    <!--
+      File Name: lbj_library.png
+      Original Name: lbj-presdiential-library.jpg
+      Artist/Owner: Jay Godwin
+      File URL: https://media-cdn.tripadvisor.com/media/photo-o/0a/aa/6e/8a/lbj-presidential-library.jpg
+      Date Retrieved: Friday, November 20th, 2020
+    -->
+    <!-- Neill-Cochran House Museum Photo -->
+    <item>@drawable/neill_cochran_museum</item>
+    <!--
+      File Name: neil_cochran_museum.png
+      Original Name: the-neill-cochran-museum.jpg
+      Artist/Owner: Rolf A.
+      File URL: https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/f0/86/f6/the-neill-cochran-museum.jpg?w=1100&h=-1&s=1
+      Date Retrieved: Friday, November 20th, 2020
+    -->
+    <!-- George Washington Carver Museum Photo -->
+    <item>@drawable/washington_carver_museum</item>
+    <!--
+      File Name: washington_carver_museum.png
+      Original Name: photo0jpg.jpg
+      Artist/Owner: Clayton O.
+      File URL: https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/29/98/69/photo0jpg.jpg?w=1100&h=700&s=1
+      Date Retrieved: Friday, November 20th, 2020
+    -->
+    <!-- Elisabet Ney Museum Photo -->
+    <item>@drawable/elisabet_ney_museum</item>
+    <!--
+      File Name: elisabet_ney_museum.png
+      Original Name: 011-59ae5420b2f0df7_59ae552f-dcbf-c79b-649acd5263c3f9ca.jpg
+      Artist/Owner: austintexas.org
+      File URL: https://assets.simpleviewinc.com/simpleview/image/upload/crm/austin/011-59ae5420b2f0df7_59ae552f-dcbf-c79b-649acd5263c3f9ca.jpg
+      Date Retrieved: Monday, November 23rd, 2020
+    -->
+  </array>
+  <!-- Bullock Museum Array-->
+  <string-array name="bullock_museum">
+    <!-- Attraction Name -->
+    <item>@string/bullock_museum_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/bullock_museum_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/bullock_museum_site</item>
+    <!-- Attraction Address -->
+    <item>@string/bullock_museum_address</item>
+  </string-array>
+  <!-- LBJ Library Array -->
+  <string-array name="lbj_library">
+    <!-- Attraction Name -->
+    <item>@string/lbj_library_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/lbj_library_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/lbj_library_site</item>
+    <!-- Attraction Website -->
+    <item>@string/lbj_library_address</item>
+  </string-array>
+  <!-- Neill-Cochran Museum Array -->
+  <string-array name="neill_cochran_museum">
+    <!-- Attraction Name -->
+    <item>@string/neill_cochran_museum_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/neill_cochran_museum_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/neill_cochran_museum_site</item>
+    <!-- Attraction Address -->
+    <item>@string/neill_cochran_museum_address</item>
+  </string-array>
+  <!-- George Washington Carver Museum Array -->
+  <string-array name="washington_carver_museum">
+    <!-- Attraction Name -->
+    <item>@string/washington_carver_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/washington_carver_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/washington_carver_site</item>
+    <!-- Attraction Website -->
+    <item>@string/washington_carver_address</item>
+  </string-array>
+  <!-- Elisabet Ney Museum Array -->
+  <string-array name="elisabet_ney_museum">
+    <!-- Attraction Name -->
+    <item>@string/elisabet_ney_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/elisabet_ney_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/elisabet_ney_site</item>
+    <!-- Attraction Address -->
+    <item>@string/elisabet_ney_address</item>
   </string-array>
 </resources>

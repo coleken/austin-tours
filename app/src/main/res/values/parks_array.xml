@@ -1,18 +1,86 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
-* Austin Tours String Array Format:
-* Each item contains attributes for a single attraction.
-* Each attribute is separated using a semicolon (;) as a delimiter.
-* Each item contains (in this order): Name, Hours, Website, Address
-* Each item uses (\n) and (\t) for formatting.
-* Example item:
-  Name;\nDay1:\t\tXXAM - XXP\n\nDay2:\t\tXXAM - XXP\n\nDay3:\t\tXXAM - XXP\n\nDay4:\t\tXXAM - XXP\n\nDay5:\t\tXXAM - XXP\n\nDay6:\t\tXXAM - XXP\n\nDay7:\t\tXXAM - XXPM;https://www.example.com;123 Example St\nCity, State 12345
--->
+<?xml version="1.0" encoding="utf-8"?><!-- Attractions: Parks Arrays -->
 <resources>
-  <string-array name="parksArray">
-    <item>Mount Bonnell;\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM;https://www.austintexas.gov;3800 Mt Bonnell Dr\nAustin, TX 78731</item>
-    <item>Emma Long City Park;\nSun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM;https://austintexas.gov/department/emma-long-metropolitan-park;1600 City Park Rd\nAustin, TX 78730</item>
-    <item>Zilker Park;\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM;http://www.austintexas.gov/department/zilker-metropolitan-park;2100 Barton Springs Rd\nAustin, TX 78746</item>
-    <item>McKinney Falls State Park;\nSun:\t\t10AM - 8PM\n\nMon:\t\t10AM - 8PM\n\nTues:\t\t10AM - 8PM\n\nWed:\t\t10AM - 8PM\n\nThurs:\t\t10AM - 8PM\n\nFri:\t\t10AM - 8PM\n\nSat:\t\t10AM - 8PM;https://tpwd.texas.gov/state-parks/mckinney-falls;5808 McKinney Falls Pkwy\nAustin, TX 78744</item>
+  <!-- Parks Attractions Photos -->
+  <array name="parks_photos">
+    <!-- Mount Bonnell Photo -->
+    <item>@drawable/mount_bonnell</item>
+    <!--
+      File Name: mount_bonnell.png
+      Original Name: megan-markham-s9vKj39D6jA-unsplash.jpg
+      Artist/Owner: Megan Markham
+      File URL: https://unsplash.com/photos/s9vKj39D6jA
+      Date Retrieved: Monday, November 16th, 2020
+    -->
+    <!-- Emma Long City Park Photo -->
+    <item>@drawable/emma_long_park</item>
+    <!--
+      File Name: emma_long_park.png
+      Original Name: GettyImages-155015268-5b31274d8e1b6e003695036e.webp
+      Artist/Owner: JodiJacobson / Getty Images
+      File URL: https://www.tripsavvy.com/emma-long-park-austin-texas-complete-guide-4167619
+      Date Retrieved: Tuesday, November 27th, 2020
+    -->
+    <!-- Zilker Park Photo -->
+    <item>@drawable/zilker_park</item>
+    <!--
+      File Name: zilker_park.png
+      Original Name: GettyImages-500491816-5a830da3c6733500377bd4e4.webp
+      Artist/Owner: RoschetzkyIstockPhoto / Getty Images
+      File URL: https://www.tripsavvy.com/the-top-things-to-do-in-zilker-park-in-austin-4158303
+      Date Retrieved: Tuesday, November 17th, 2020
+    -->
+    <!-- McKinney Falls Photo -->
+    <item>@drawable/mckinney_falls</item>
+    <!--
+      File Name: mckinney_falls
+      Original Name: mckinney-falls-state-park-1126832088-b484fa59bded43fcb24e76ca5f147b8a.webp
+      Artist/Owner: ShengYing Lin / Getty Images
+      File URL: mckinney-falls-state-park-1126832088-b484fa59bded43fcb24e76ca5f147b8a.webp
+      Date Retrieved: Tuesday, November 17th, 2020
+    -->
+  </array>
+  <!-- Mount Bonnell Array -->
+  <string-array name="mount_bonnell">
+    <!-- Attraction Name -->
+    <item>@string/mount_bonnell_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/mount_bonnell_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/mount_bonnell_site</item>
+    <!-- Attraction Address -->
+    <item>@string/mount_bonnell_address</item>
+  </string-array>
+  <!-- Emma Long City Park Array -->
+  <string-array name="emma_long_park">
+    <!-- Attraction Name -->
+    <item>@string/emma_long_park_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/emma_long_park_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/emma_long_park_site</item>
+    <!-- Attraction Address -->
+    <item>@string/emma_long_park_address</item>
+  </string-array>
+  <!-- Zilker Park Array -->
+  <string-array name="zilker_park">
+    <!-- Attraction Name -->
+    <item>@string/zilker_park_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/zilker_park_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/zilker_park_site</item>
+    <!-- Attraction Address -->
+    <item>@string/zilker_park_address</item>
+  </string-array>
+  <!-- McKinney Falls Array -->
+  <string-array name="mckinney_falls">
+    <!-- Attraction Name -->
+    <item>@string/mckinney_falls_name</item>
+    <!-- Attraction Hours -->
+    <item>@string/mckinney_falls_hours</item>
+    <!-- Attraction Website -->
+    <item>@string/mckinney_falls_site</item>
+    <!-- Attraction Address -->
+    <item>@string/mckinney_falls_address</item>
   </string-array>
 </resources>

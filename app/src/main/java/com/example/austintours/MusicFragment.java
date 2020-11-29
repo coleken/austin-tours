@@ -1,5 +1,6 @@
 package com.example.austintours;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,18 +48,12 @@ public class MusicFragment extends Fragment {
    * @param binding An instance of MusicFragmentBinding.
    */
   private void displayAttractionList(FragmentMusicBinding binding) {
-    String[] searchList = getResources().getStringArray(R.array.musicArray);
     ArrayList<Attraction> attractions = new ArrayList<>();
-    int[] photos = attractionPhotos();
-    final String splitBy = ";";
+    String[][] musicArray = getMusicArray();
+    TypedArray photos = getAttractionPhotos();
     int counter = 0;
-    for (String str : searchList) {
-      String[] attraction = str.split(splitBy);
-      String name = attraction[0];
-      String hours = attraction[1];
-      String website = attraction[2];
-      String address = attraction[3];
-      attractions.add(new Attraction(name, hours, website, address, photos[counter]));
+    for (String[] str : musicArray) {
+      attractions.add(new Attraction(str[0], str[1], str[2], str[3], photos.getDrawable(counter)));
       counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;
@@ -68,45 +63,24 @@ public class MusicFragment extends Fragment {
   }
 
   /**
-   * Returns an int array of image resource identifiers for the custom attraction object.
+   * Returns an array of string arrays that contain attraction information.
    *
-   * @return An int array of image resource identifiers.
+   * @return An array of string arrays
    */
-  private int[] attractionPhotos() {
-    return new int[]{R.drawable.austin_city_limits, R.drawable.hole_in_the_wall,
-        R.drawable.skylark_lounge, R.drawable.sxsw_center, R.drawable.zach_theater};
-    /*
-     * Attraction Photo Image Sources
-     *
-     * File Name: austin_city_limits.png
-     * Original Name: exterior-smaller.jpg
-     * Artist/Owner: SMITH-CLEMENTI
-     * File URL: https://acl-live.com/wp-content/uploads/2018/10/exterior-smaller.jpg
-     * Date Retrieved: Thursday, November 19th, 2020
-     *
-     * File Name: hole_in_the_wall.png
-     * Original Name: o.jpg
-     * Artist/Owner: Barret L.
-     * File URL: https://s3-media0.fl.yelpcdn.com/bphoto/qvAcVqYGUp2Fw62MJdebPw/o.jpg
-     * Date Retrieved: Thursday, November 19th, 2020
-     *
-     * File Name: skylark_lounge.png
-     * Original Name: o.jpg
-     * Artist/Owner: Jennifer Y.
-     * File URL: https://s3-media0.fl.yelpcdn.com/bphoto/HBH60wlItRmXwsqG1Zum8g/o.jpg
-     * Date Retrieved: Thursday, November 19th, 2020
-     *
-     * File Name: sxsw_center.png
-     * Original Name: 1__18_of_19_.0.jpg
-     * Artist/Owner: SXSW
-     * File URL: https://cdn.vox-cdn.com/uploads/chorus_image/image/64823298/1__18_of_19_.0.jpg
-     * Date Retrieved: Thursday, November 26th, 2020
-     *
-     * File Name: zach_theater.png
-     * Original Name: ZACH-Topfer-1170_Exterior.jpg
-     * Artist/Owner: zactheater.org
-     * File URL: https://zachtheatre.org/wp-content/uploads/2019/10/ZACH-Topfer-1170_Exterior.jpg
-     * Date Retrieved: Monday, November 23rd, 2020
-     */
+  private String[][] getMusicArray() {
+    return new String[][]{getResources().getStringArray(R.array.austin_city_limits),
+        getResources().getStringArray(R.array.hole_in_wall),
+        getResources().getStringArray(R.array.skylark_lounge),
+        getResources().getStringArray(R.array.south_by_southwest),
+        getResources().getStringArray(R.array.zach_theater)};
+  }
+
+  /**
+   * Returns a typed array of images for the custom attraction objects.
+   *
+   * @return A typed array of images.
+   */
+  private TypedArray getAttractionPhotos() {
+    return getResources().obtainTypedArray(R.array.music_photos);
   }
 }

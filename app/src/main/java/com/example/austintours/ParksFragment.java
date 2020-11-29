@@ -1,5 +1,6 @@
 package com.example.austintours;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,18 +48,12 @@ public class ParksFragment extends Fragment {
    * @param binding An instance of ParksFragmentBinding.
    */
   private void displayAttractionList(FragmentParksBinding binding) {
-    String[] searchList = getResources().getStringArray(R.array.parksArray);
     ArrayList<Attraction> attractions = new ArrayList<>();
-    int[] photos = attractionPhotos();
-    final String splitBy = ";";
+    String[][] parksArray = getParksArray();
+    TypedArray photos = getAttractionPhotos();
     int counter = 0;
-    for (String str : searchList) {
-      String[] attraction = str.split(splitBy);
-      String name = attraction[0];
-      String hours = attraction[1];
-      String website = attraction[2];
-      String address = attraction[3];
-      attractions.add(new Attraction(name, hours, website, address, photos[counter]));
+    for (String[] str : parksArray) {
+      attractions.add(new Attraction(str[0], str[1], str[2], str[3], photos.getDrawable(counter)));
       counter++;
     }
     RecyclerView recyclerView = binding.listAttractionItems;
@@ -68,39 +63,23 @@ public class ParksFragment extends Fragment {
   }
 
   /**
-   * Returns an int array of image resource identifiers for the custom attraction object.
+   * Returns an array of string arrays that contain attraction information.
    *
-   * @return An int array of image resource identifiers.
+   * @return An array of string arrays
    */
-  private int[] attractionPhotos() {
-    return new int[]{R.drawable.mount_bonnell, R.drawable.emma_long_park,
-        R.drawable.zilker_park, R.drawable.mckinney_falls};
-    /*
-     * Attraction Photo Image Sources
-     *
-     * File Name: mount_bonnell.png
-     * Original Name: megan-markham-s9vKj39D6jA-unsplash.jpg
-     * Artist/Owner: Megan Markham
-     * File URL: https://unsplash.com/photos/s9vKj39D6jA
-     * Date Retrieved: Monday, November 16th, 2020
-     *
-     * File Name: emma_long_park.png
-     * Original Name: GettyImages-155015268-5b31274d8e1b6e003695036e.webp
-     * Artist/Owner: JodiJacobson / Getty Images
-     * File URL: https://www.tripsavvy.com/emma-long-park-austin-texas-complete-guide-4167619
-     * Date Retrieved: Tuesday, November 27th, 2020
-     *
-     * File Name: zilker_park.png
-     * Original Name: GettyImages-500491816-5a830da3c6733500377bd4e4.webp
-     * Artist/Owner: RoschetzkyIstockPhoto / Getty Images
-     * File URL: https://www.tripsavvy.com/the-top-things-to-do-in-zilker-park-in-austin-4158303
-     * Date Retrieved: Tuesday, November 17th, 2020
-     *
-     * File Name: mckinney_falls
-     * Original Name: mckinney-falls-state-park-1126832088-b484fa59bded43fcb24e76ca5f147b8a.webp
-     * Artist/Owner: ShengYing Lin / Getty Images
-     * File URL: mckinney-falls-state-park-1126832088-b484fa59bded43fcb24e76ca5f147b8a.webp
-     * Date Retrieved: Tuesday, November 17th, 2020
-     */
+  private String[][] getParksArray() {
+    return new String[][]{getResources().getStringArray(R.array.mount_bonnell),
+        getResources().getStringArray(R.array.emma_long_park),
+        getResources().getStringArray(R.array.zilker_park),
+        getResources().getStringArray(R.array.mckinney_falls)};
+  }
+
+  /**
+   * Returns a typed array of images for the custom attraction objects.
+   *
+   * @return A typed array of images.
+   */
+  private TypedArray getAttractionPhotos() {
+    return getResources().obtainTypedArray(R.array.parks_photos);
   }
 }
