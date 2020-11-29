@@ -11,7 +11,7 @@
       File URL: https://unsplash.com/photos/s9vKj39D6jA
       Date Retrieved: Monday, November 16th, 2020
     -->
-    <!-- Emma Long City Park Photo -->
+    <!-- Emma Long Metropolitan Park Photo -->
     <item>@drawable/emma_long_park</item>
     <!--
       File Name: emma_long_park.png
@@ -50,7 +50,7 @@
     <!-- Attraction Address -->
     <item>@string/mount_bonnell_address</item>
   </string-array>
-  <!-- Emma Long City Park Array -->
+  <!-- Emma Long Metropolitan Park Array -->
   <string-array name="emma_long_park">
     <!-- Attraction Name -->
     <item>@string/emma_long_park_name</item>

@@ -151,7 +151,7 @@
   <!-- Music Strings: Austin City Limits Name -->
   <string name="austin_city_limits_name">Austin City Limits</string>
   <!-- Music Strings: Austin City Limits Hours -->
-  <string name="austin_city_limits_hours">\nSun:\t\tClosed\n\nMon:\t\t8AM - 6PM\n\nTues:\t\t8AM - 6PM\n\nWed:\t\t8AM - 6PM\n\nThurs:\t\t8AM - 12AM\n\nFri:\t\t8AM - 12AM\n\nSat:\t\t11AM - 12AM</string>
+  <string name="austin_city_limits_hours">\nPlease Note:\n\nEvents and tour dates are posted on the website\'s calendar.\n\nCheck the website for details!</string>
   <!-- Music Strings: Austin City Limits Website -->
   <string name="austin_city_limits_site">https://acl-live.com</string>
   <!-- Music Strings: Austin City Limits Address -->
@@ -196,7 +196,7 @@
   <!-- = = = = = = = = = = Attraction Data: Parks = = = = = = = = = = -->
 
   <!-- Parks Strings: Mount Bonnell Name -->
-  <string name="mount_bonnell_name">Mount Bonnell</string>
+  <string name="mount_bonnell_name">Mt. Bonnell</string>
   <!-- Parks Strings: Mount Bonnell Hours -->
   <string name="mount_bonnell_hours">\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM</string>
   <!-- Parks Strings: Mount Bonnell Website -->
@@ -205,7 +205,7 @@
   <string name="mount_bonnell_address">3800 Mt Bonnell Dr\nAustin, TX 78731</string>
 
   <!-- Parks Strings: Emma Long Park Name -->
-  <string name="emma_long_park_name">Emma Long City Park</string>
+  <string name="emma_long_park_name">Emma Long Metropolitan Park</string>
   <!-- Parks Strings: Emma Long Park Hours -->
   <string name="emma_long_park_hours">\nSun:\t\t7AM - 10PM\n\nMon:\t\t7AM - 10PM\n\nTues:\t\t7AM - 10PM\n\nWed:\t\t7AM - 10PM\n\nThurs:\t\t7AM - 10PM\n\nFri:\t\t7AM - 10PM\n\nSat:\t\t7AM - 10PM</string>
   <!-- Parks Strings: Emma Long Park Website -->
@@ -214,7 +214,7 @@
   <string name="emma_long_park_address">1600 City Park Rd\nAustin, TX 78730</string>
 
   <!-- Parks Strings: Zilker Park Name -->
-  <string name="zilker_park_name">Zilker Park</string>
+  <string name="zilker_park_name">Zilker Metropolitan Park</string>
   <!-- Parks Strings: Zilker Park Hours -->
   <string name="zilker_park_hours">\nSun:\t\t5AM - 10PM\n\nMon:\t\t5AM - 10PM\n\nTues:\t\t5AM - 10PM\n\nWed:\t\t5AM - 10PM\n\nThurs:\t\t5AM - 10PM\n\nFri:\t\t5AM - 10PM\n\nSat:\t\t5AM - 10PM</string>
   <!-- Parks Strings: Zilker Park Website -->
